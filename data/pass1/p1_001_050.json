@@ -1,0 +1,1545 @@
+[
+ {
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_liner": "CRM platform for sales, service and marketing",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 connected apps; JWT bearer for server-to-server",
+  "access": "self_serve",
+  "access_note": "Free Developer Edition org gives API access",
+  "api_type": [
+   "rest",
+   "soap",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST, SOAP, Bulk, Composite, UI API; thousands of sObjects",
+  "official_mcp": "yes",
+  "mcp_note": "Salesforce hosted MCP servers / DX MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/apis",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 2,
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "one_liner": "CRM and marketing platform with sales and service hubs",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "OAuth2 for public apps; private app access token",
+  "access": "self_serve",
+  "access_note": "Free developer account and free CRM; create private/public app",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "CRM objects, marketing, CMS, conversations; hundreds of endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "HubSpot official MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.hubspot.com/docs/api/overview",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_liner": "Sales CRM focused on pipeline management",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "API token per user; OAuth2 for marketplace apps",
+  "access": "free_trial",
+  "access_note": "14-day trial; dev sandbox via developer program",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Deals, persons, orgs, activities, leads; v1 and v2",
+  "official_mcp": "yes",
+  "mcp_note": "Pipedrive MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API usable only on paid plan after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "one_liner": "Modern customizable CRM built on flexible data model",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer token; OAuth2 for apps",
+  "access": "self_serve",
+  "access_note": "Free plan; generate API key in workspace settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Objects, records, lists, notes, tasks, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Attio MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.attio.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_liner": "Open-source CRM, self-hostable or cloud",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer token generated in settings",
+  "access": "self_serve",
+  "access_note": "Sign up cloud or self-host; create API key",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST and GraphQL for people, companies, opportunities, custom objects",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP servers",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://twenty.com/developers",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_liner": "Customizable work and CRM platform",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 authorization code and client credentials; app auth",
+  "access": "self_serve",
+  "access_note": "Free plan; create API key client id/secret",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Items, apps, spaces, tasks, contacts",
+  "official_mcp": "no",
+  "mcp_note": "None official",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.podio.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_liner": "Cloud CRM within Zoho suite",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 via Zoho API console with data-center specific domains",
+  "access": "self_serve",
+  "access_note": "Free edition/trial; register client in API console",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Modules CRUD, COQL, bulk, notifications",
+  "official_mcp": "yes",
+  "mcp_note": "Zoho MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_liner": "Sales CRM for inside sales teams with calling and email",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "API key via HTTP basic; OAuth2 for apps",
+  "access": "free_trial",
+  "access_note": "14-day trial; API key from settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Leads, contacts, opportunities, activities, calls, sequences",
+  "official_mcp": "beta",
+  "mcp_note": "Close MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs paid plan after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.close.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_liner": "CRM built for Google Workspace users",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "API key plus user email headers",
+  "access": "paid_plan",
+  "access_note": "API key from settings on paid plan",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "People, companies, leads, opportunities, tasks, activities",
+  "official_mcp": "no",
+  "mcp_note": "None official",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plans only",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.copper.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 10,
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "one_liner": "Relationship management CRM for financial services",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 client credentials per tenant",
+  "access": "partner_gated",
+  "access_note": "Customer only; credentials provisioned by admin",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Entries, data, rules, user management",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "blocked",
+  "blocker": "enterprise_only",
+  "blocker_note": "Customer tenants only; no public signup",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://api.docs.dealcloud.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer support ticketing and helpdesk platform",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "auth_note": "OAuth2; API token via basic auth email/token",
+  "access": "free_trial",
+  "access_note": "14-day trial; sandbox on higher plans",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tickets, users, orgs, help center, talk, chat; hundreds of endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Zendesk MCP (beta)",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan required after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.zendesk.com/api-reference",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer messaging and support platform",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Access token; OAuth2 for public apps",
+  "access": "self_serve",
+  "access_note": "Free developer workspace",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Contacts, conversations, companies, articles, tickets",
+  "official_mcp": "yes",
+  "mcp_note": "Intercom MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.intercom.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Cloud helpdesk and ticketing from Freshworks",
+  "auth_methods": [
+   "api_key",
+   "basic"
+  ],
+  "auth_note": "API key via basic auth",
+  "access": "free_trial",
+  "access_note": "Free trial; API key in profile settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tickets, contacts, companies, agents, solutions",
+  "official_mcp": "beta",
+  "mcp_note": "Freshworks MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Free plan limited; paid after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.freshdesk.com/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_liner": "Shared inbox and customer operations platform",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "API token; OAuth2 for apps",
+  "access": "free_trial",
+  "access_note": "Trial; create API token in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Conversations, messages, contacts, channels, teammates",
+  "official_mcp": "no",
+  "mcp_note": "None official",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://dev.frontapp.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 15,
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_liner": "B2B support platform for Slack and customer channels",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API token created by admin",
+  "access": "paid_plan",
+  "access_note": "Customer account admin creates token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Issues, accounts, contacts, messages",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs customer account",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.usepylon.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_liner": "Multichannel helpdesk and live chat software",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key from account settings",
+  "access": "free_trial",
+  "access_note": "Free trial; generate API key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Tickets, agents, customers, departments",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://support.liveagent.com/061754-How-to-make-requests-with-API",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_liner": "API-first customer support platform for B2B",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key bearer; GraphQL",
+  "access": "self_serve",
+  "access_note": "Free workspace; create machine user API key",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "GraphQL: customers, threads, events, labels",
+  "official_mcp": "yes",
+  "mcp_note": "Plain MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_liner": "Shared inbox and helpdesk for support teams",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 client credentials/auth code",
+  "access": "free_trial",
+  "access_note": "Trial; create app in My Apps",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Conversations, customers, mailboxes, tags, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Help Scout MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.helpscout.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_liner": "Ecommerce customer helpdesk",
+  "auth_methods": [
+   "oauth2",
+   "basic",
+   "api_key"
+  ],
+  "auth_note": "OAuth2 for apps; basic auth with API key",
+  "access": "free_trial",
+  "access_note": "Trial account",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tickets, customers, macros, integrations",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.gorgias.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service platform centered on people not tickets",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "Basic auth with API token",
+  "access": "partner_gated",
+  "access_note": "Customer account; admin creates API token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Conversations, customers, topics, tasks",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "blocked",
+  "blocker": "enterprise_only",
+  "blocker_note": "No self-signup; sales-led",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.gladly.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_liner": "Team messaging and collaboration platform",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 bot and user tokens",
+  "access": "self_serve",
+  "access_note": "Free workspace and app creation",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Web API 200+ methods, Events, Socket Mode",
+  "official_mcp": "yes",
+  "mcp_note": "Slack MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://api.slack.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud communications APIs for SMS, voice and video",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "auth_note": "Account SID and auth token basic; API keys",
+  "access": "free_trial",
+  "access_note": "Trial with credit",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Messaging, voice, verify, lookup, conversations",
+  "official_mcp": "yes",
+  "mcp_note": "Twilio MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial limited; paid for production",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.twilio.com/docs",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_liner": "Team chat within Zoho",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 via Zoho console",
+  "access": "self_serve",
+  "access_note": "Free plan; register client",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Messages, channels, bots, users",
+  "official_mcp": "no",
+  "mcp_note": "Zoho MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_liner": "Collaboration suite with messenger, docs and calendar",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "App tenant access tokens; user OAuth",
+  "access": "self_serve",
+  "access_note": "Free tenant; create custom app",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "IM, calendar, docs, approval, contacts",
+  "official_mcp": "yes",
+  "mcp_note": "Lark OpenAPI MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://open.larksuite.com/document",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_liner": "Free team chat app by CAKE.com",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key in profile",
+  "access": "self_serve",
+  "access_note": "Free plan; generate key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Messages, channels, users basic",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://pumble.com/help/integrations/add-pumble-apps-and-integrations/api-keys",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_liner": "Community chat and voice platform",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Bot token; OAuth2",
+  "access": "self_serve",
+  "access_note": "Create application in developer portal",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Guilds, channels, messages, interactions, gateway",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://discord.com/developers/docs",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_liner": "Messaging app with Bot API",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "Bot token from BotFather",
+  "access": "self_serve",
+  "access_note": "Create bot via BotFather",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Bot API methods ~100+",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://core.telegram.org/bots/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 28,
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_liner": "WhatsApp messaging via Meta Cloud API",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Access token via Meta app",
+  "access": "approval",
+  "access_note": "Meta app, business verification for production",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Messages, templates, media, phone numbers",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Business verification and template approval",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud phone system for business",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "API id and token basic; OAuth2 for partners",
+  "access": "paid_plan",
+  "access_note": "Needs account; API keys from dashboard",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Calls, users, numbers, contacts",
+  "official_mcp": "no",
+  "mcp_note": "Aircall MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid subscription",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.aircall.io",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_liner": "Communications APIs for SMS, voice, video",
+  "auth_methods": [
+   "api_key",
+   "jwt",
+   "basic"
+  ],
+  "auth_note": "API key and secret; JWT for voice/video",
+  "access": "free_trial",
+  "access_note": "Free credit on signup",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "SMS, voice, verify, video, number insight",
+  "official_mcp": "no",
+  "mcp_note": "Vonage MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial credit then paid",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.vonage.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Online advertising platform API",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 plus developer token",
+  "access": "approval",
+  "access_note": "Developer token needs approval via manager account",
+  "api_type": [
+   "rest",
+   "grpc"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Campaigns, ad groups, ads, reporting GAQL",
+  "official_mcp": "yes",
+  "mcp_note": "Google Ads MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Developer token approval",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.google.com/google-ads/api/docs/start",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Meta advertising Marketing API",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Access tokens via Meta app",
+  "access": "approval",
+  "access_note": "App review for ads_management advanced access",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Campaigns, ad sets, ads, insights",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "App review and business verification",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "LinkedIn advertising and marketing APIs",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "3-legged OAuth2",
+  "access": "approval",
+  "access_note": "Marketing Developer Platform application approval",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Campaigns, creatives, analytics",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "partner_approval",
+  "blocker_note": "Marketing Developer Platform access request",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "All-in-one CRM and marketing for agencies",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "OAuth2 marketplace app; private integration token",
+  "access": "free_trial",
+  "access_note": "Trial; private integration token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Contacts, opportunities, calendars, conversations",
+  "official_mcp": "yes",
+  "mcp_note": "GoHighLevel MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan after trial",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://highlevel.stoplight.io",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 35,
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Email marketing platform",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "auth_note": "API key with datacenter; OAuth2 for apps",
+  "access": "self_serve",
+  "access_note": "Free plan; generate API key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Lists, campaigns, automations, reports",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 36,
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Ecommerce email and SMS marketing",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Private API key; OAuth2 for apps",
+  "access": "self_serve",
+  "access_note": "Free account; create key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Profiles, lists, events, campaigns, flows",
+  "official_mcp": "yes",
+  "mcp_note": "Klaviyo MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.klaviyo.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "All-in-one funnel and email marketing builder",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key header X-API-Key",
+  "access": "free_trial",
+  "access_note": "Free plan; API key in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Contacts, tags, courses, orders basics",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.systeme.io",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 38,
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Visual discovery and advertising platform",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2",
+  "access": "approval",
+  "access_note": "Trial access then apply for standard access",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Pins, boards, ads, analytics",
+  "official_mcp": "no",
+  "mcp_note": "Pinterest MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Standard access review",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.pinterest.com/docs/api/v5/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 39,
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Meta microblogging text network API",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 via Meta app",
+  "access": "approval",
+  "access_note": "Meta app; permissions need review",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Publish posts, replies, insights",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "App review for threads permissions",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Email delivery API by Twilio",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer",
+  "access": "free_trial",
+  "access_note": "Free tier limited; sender verification",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Mail send, marketing contacts, stats, templates",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "one_liner": "Ecommerce platform",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "OAuth2 for public apps; admin access token for custom apps",
+  "access": "self_serve",
+  "access_note": "Free partner account and dev store",
+  "api_type": [
+   "graphql",
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Admin GraphQL, Storefront API",
+  "official_mcp": "yes",
+  "mcp_note": "Shopify Dev MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_liner": "WordPress ecommerce plugin",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "Consumer key and secret basic",
+  "access": "self_serve",
+  "access_note": "Self-host free; generate keys",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Products, orders, customers, coupons",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "SaaS ecommerce platform",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "API account token; OAuth app",
+  "access": "free_trial",
+  "access_note": "Trial store; API account",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Catalog, orders, customers, storefront",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.bigcommerce.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Enterprise commerce platform by Salesforce",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Account Manager client ID OAuth",
+  "access": "partner_gated",
+  "access_note": "Requires licensed instance",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "SCAPI, OCAPI",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "blocked",
+  "blocker": "enterprise_only",
+  "blocker_note": "Licensed enterprise tenant",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_liner": "Open-source ecommerce platform by Adobe",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Integration tokens OAuth1; admin tokens",
+  "access": "self_serve",
+  "access_note": "Open source self-host; Adobe Commerce licensed",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST and GraphQL",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.adobe.com/commerce/webapi/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_liner": "Website builder with commerce",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "API key for own site; OAuth for apps",
+  "access": "paid_plan",
+  "access_note": "Commerce plan for Orders API",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Orders, products, inventory, profiles",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid Commerce plan",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "one_liner": "Ecommerce widget platform by Lightspeed",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Token; OAuth",
+  "access": "self_serve",
+  "access_note": "Free plan; app registration",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Products, orders, customers",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ecwid.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_liner": "Platform for creators selling digital products",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 access token",
+  "access": "self_serve",
+  "access_note": "Create application in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Products, sales, subscribers",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://gumroad.com/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_liner": "Amazon seller APIs",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "LWA OAuth with AWS credentials",
+  "access": "approval",
+  "access_note": "Developer registration approval",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Orders, listings, reports, fulfillment",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Seller developer profile approval",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_liner": "Creator monetization platform",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "Unknown",
+  "access": "self_serve",
+  "access_note": "Unclear",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Unknown",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "ready_with_gate",
+  "blocker": "other",
+  "blocker_note": "Little public API knowledge",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://fanbasis.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ }
+]

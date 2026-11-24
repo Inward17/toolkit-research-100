@@ -1,0 +1,685 @@
+{
+ "pass1": {
+  "accuracy": 0.789,
+  "correct": 142,
+  "total": 180,
+  "per_field": {
+   "auth_methods": 0.733,
+   "access": 0.867,
+   "api_type": 0.933,
+   "official_mcp": 0.567,
+   "verdict": 0.833,
+   "blocker": 0.8
+  },
+  "misses": [
+   {
+    "id": 6,
+    "app": "Podio",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 10,
+    "app": "DealCloud",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "access",
+    "got": "free_trial",
+    "gold": [
+     "self_serve"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes",
+     "beta"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 17,
+    "app": "Plain",
+    "field": "access",
+    "got": "self_serve",
+    "gold": [
+     "free_trial"
+    ]
+   },
+   {
+    "id": 17,
+    "app": "Plain",
+    "field": "verdict",
+    "got": "ready",
+    "gold": [
+     "ready_with_gate"
+    ]
+   },
+   {
+    "id": 17,
+    "app": "Plain",
+    "field": "blocker",
+    "got": "none",
+    "gold": [
+     "paid_plan"
+    ]
+   },
+   {
+    "id": 19,
+    "app": "Gorgias",
+    "field": "auth_methods",
+    "got": [
+     "oauth2",
+     "basic",
+     "api_key"
+    ],
+    "gold": [
+     "basic",
+     "oauth2"
+    ]
+   },
+   {
+    "id": 19,
+    "app": "Gorgias",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 28,
+    "app": "WhatsApp Business",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes",
+     "beta"
+    ]
+   },
+   {
+    "id": 29,
+    "app": "Aircall",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 30,
+    "app": "Vonage",
+    "field": "access",
+    "got": "free_trial",
+    "gold": [
+     "self_serve"
+    ]
+   },
+   {
+    "id": 30,
+    "app": "Vonage",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes"
+    ]
+   },
+   {
+    "id": 30,
+    "app": "Vonage",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 30,
+    "app": "Vonage",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 38,
+    "app": "Pinterest",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes",
+     "beta"
+    ]
+   },
+   {
+    "id": 40,
+    "app": "SendGrid",
+    "field": "auth_methods",
+    "got": [
+     "api_key",
+     "bearer_token"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 40,
+    "app": "SendGrid",
+    "field": "verdict",
+    "got": "ready",
+    "gold": [
+     "ready_with_gate"
+    ]
+   },
+   {
+    "id": 40,
+    "app": "SendGrid",
+    "field": "blocker",
+    "got": "none",
+    "gold": [
+     "paid_plan"
+    ]
+   },
+   {
+    "id": 41,
+    "app": "Shopify",
+    "field": "auth_methods",
+    "got": [
+     "oauth2",
+     "api_key"
+    ],
+    "gold": [
+     "oauth2"
+    ]
+   },
+   {
+    "id": 42,
+    "app": "WooCommerce",
+    "field": "auth_methods",
+    "got": [
+     "basic",
+     "oauth2"
+    ],
+    "gold": [
+     "basic"
+    ]
+   },
+   {
+    "id": 42,
+    "app": "WooCommerce",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 49,
+    "app": "Amazon Selling Partner",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes",
+     "beta"
+    ]
+   },
+   {
+    "id": 52,
+    "app": "SE Ranking",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes"
+    ]
+   },
+   {
+    "id": 66,
+    "app": "Neo4j",
+    "field": "api_type",
+    "got": [
+     "rest",
+     "other"
+    ],
+    "gold": [
+     "rest"
+    ]
+   },
+   {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "field": "auth_methods",
+    "got": [
+     "other"
+    ],
+    "gold": [
+     "oauth2"
+    ]
+   },
+   {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "api_type",
+    "got": [
+     "rest"
+    ],
+    "gold": [
+     "rest",
+     "graphql"
+    ]
+   },
+   {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "auth_methods",
+    "got": [
+     "api_key",
+     "bearer_token"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes"
+    ]
+   },
+   {
+    "id": 92,
+    "app": "Otter AI",
+    "field": "auth_methods",
+    "got": [
+     "oauth2"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 92,
+    "app": "Otter AI",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "enterprise_only"
+    ]
+   },
+   {
+    "id": 99,
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "field": "auth_methods",
+    "got": [
+     "bearer_token"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 99,
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "field": "access",
+    "got": "free_trial",
+    "gold": [
+     "self_serve"
+    ]
+   },
+   {
+    "id": 99,
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "field": "official_mcp",
+    "got": "no",
+    "gold": [
+     "yes"
+    ]
+   },
+   {
+    "id": 99,
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 99,
+    "app": "YouTube Transcript (transcriptapi.com)",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   }
+  ]
+ },
+ "pass2": {
+  "accuracy": 0.922,
+  "correct": 166,
+  "total": 180,
+  "per_field": {
+   "auth_methods": 0.9,
+   "access": 0.933,
+   "api_type": 0.933,
+   "official_mcp": 0.967,
+   "verdict": 0.9,
+   "blocker": 0.9
+  },
+  "misses": [
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "access",
+    "got": "free_trial",
+    "gold": [
+     "self_serve"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 14,
+    "app": "Front",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 19,
+    "app": "Gorgias",
+    "field": "access",
+    "got": "paid_plan",
+    "gold": [
+     "free_trial"
+    ]
+   },
+   {
+    "id": 40,
+    "app": "SendGrid",
+    "field": "auth_methods",
+    "got": [
+     "api_key",
+     "bearer_token",
+     "basic"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 41,
+    "app": "Shopify",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 41,
+    "app": "Shopify",
+    "field": "blocker",
+    "got": "app_review",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 42,
+    "app": "WooCommerce",
+    "field": "official_mcp",
+    "got": "yes",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 66,
+    "app": "Neo4j",
+    "field": "api_type",
+    "got": [
+     "rest",
+     "other"
+    ],
+    "gold": [
+     "rest"
+    ]
+   },
+   {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "field": "auth_methods",
+    "got": [
+     "oauth2",
+     "other"
+    ],
+    "gold": [
+     "oauth2"
+    ]
+   },
+   {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "api_type",
+    "got": [
+     "rest"
+    ],
+    "gold": [
+     "rest",
+     "graphql"
+    ]
+   },
+   {
+    "id": 87,
+    "app": "Xero",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 87,
+    "app": "Xero",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 90,
+    "app": "PitchBook",
+    "field": "auth_methods",
+    "got": [
+     "other"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   }
+  ]
+ },
+ "pass3": {
+  "accuracy": 0.933,
+  "correct": 168,
+  "total": 180,
+  "per_field": {
+   "auth_methods": 0.933,
+   "access": 0.967,
+   "api_type": 0.933,
+   "official_mcp": 0.967,
+   "verdict": 0.9,
+   "blocker": 0.9
+  },
+  "misses": [
+   {
+    "id": 34,
+    "app": "GoHighLevel",
+    "field": "access",
+    "got": "self_serve",
+    "gold": [
+     "free_trial",
+     "paid_plan"
+    ]
+   },
+   {
+    "id": 34,
+    "app": "GoHighLevel",
+    "field": "verdict",
+    "got": "ready",
+    "gold": [
+     "ready_with_gate"
+    ]
+   },
+   {
+    "id": 34,
+    "app": "GoHighLevel",
+    "field": "blocker",
+    "got": "none",
+    "gold": [
+     "paid_plan"
+    ]
+   },
+   {
+    "id": 40,
+    "app": "SendGrid",
+    "field": "auth_methods",
+    "got": [
+     "api_key",
+     "bearer_token",
+     "basic"
+    ],
+    "gold": [
+     "api_key"
+    ]
+   },
+   {
+    "id": 41,
+    "app": "Shopify",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 41,
+    "app": "Shopify",
+    "field": "blocker",
+    "got": "app_review",
+    "gold": [
+     "none"
+    ]
+   },
+   {
+    "id": 42,
+    "app": "WooCommerce",
+    "field": "official_mcp",
+    "got": "yes",
+    "gold": [
+     "beta"
+    ]
+   },
+   {
+    "id": 66,
+    "app": "Neo4j",
+    "field": "api_type",
+    "got": [
+     "rest",
+     "other"
+    ],
+    "gold": [
+     "rest"
+    ]
+   },
+   {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "field": "auth_methods",
+    "got": [
+     "oauth2",
+     "other"
+    ],
+    "gold": [
+     "oauth2"
+    ]
+   },
+   {
+    "id": 86,
+    "app": "QuickBooks",
+    "field": "api_type",
+    "got": [
+     "rest"
+    ],
+    "gold": [
+     "rest",
+     "graphql"
+    ]
+   },
+   {
+    "id": 87,
+    "app": "Xero",
+    "field": "verdict",
+    "got": "ready_with_gate",
+    "gold": [
+     "ready"
+    ]
+   },
+   {
+    "id": 87,
+    "app": "Xero",
+    "field": "blocker",
+    "got": "paid_plan",
+    "gold": [
+     "none"
+    ]
+   }
+  ]
+ }
+}

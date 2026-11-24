@@ -1,0 +1,1537 @@
+[
+ {
+  "id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO and SERP data APIs with pay-as-you-go pricing",
+  "auth_methods": [
+   "basic"
+  ],
+  "auth_note": "HTTP Basic with API login and password",
+  "access": "paid_plan",
+  "access_note": "Sign up; minimum $50 deposit for production; free sandbox with limited data",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "SERP, Keywords Data, Backlinks, OnPage, Domain Analytics, Business Data APIs",
+  "official_mcp": "yes",
+  "mcp_note": "Official DataForSEO MCP server (npm) exists",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Needs prepaid balance for real data",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.dataforseo.com/v3/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 52,
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO platform with rank tracking, audit and backlink data APIs",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API token in Authorization header",
+  "access": "paid_plan",
+  "access_note": "API access requires paid subscription or API plan; trial available",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Data API (keywords, backlinks, domain) and Project API (rank tracking, audit)",
+  "official_mcp": "no",
+  "mcp_note": "No known official MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid plan needed for API",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://seranking.com/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO backlink and keyword research platform",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API v3 bearer token generated in account settings",
+  "access": "paid_plan",
+  "access_note": "API requires Enterprise plan or paid API add-on; no free tier",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Site Explorer, Keywords Explorer, Rank Tracker, Site Audit endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official Ahrefs MCP server available",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Expensive paid/enterprise plan required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "AI web scraping platform with scraper API",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key in header",
+  "access": "free_trial",
+  "access_note": "Sign up gets free credits; paid after",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Scraper creation and run endpoints, results retrieval",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Credits limited on free tier",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.mrscraper.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Cloud platform for web scraping Actors and automation",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "API token; OAuth for integrations",
+  "access": "self_serve",
+  "access_note": "Free plan with monthly credits; token from console",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Actors, runs, datasets, key-value stores, tasks, schedules, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Official Apify MCP server (mcp.apify.com)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.apify.com/api/v2",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 56,
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Web scraping and crawling API returning LLM-ready markdown",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API key as bearer token",
+  "access": "self_serve",
+  "access_note": "Sign up for free credits and key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "scrape, crawl, map, search, extract, agent endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official firecrawl-mcp-server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Proxy networks and web data collection platform",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer token",
+  "access": "free_trial",
+  "access_note": "Signup with trial credit; paid usage after, KYC for some products",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Web Unlocker, SERP API, Scraper APIs, datasets, proxy zone management",
+  "official_mcp": "yes",
+  "mcp_note": "Official Bright Data MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid usage after trial credit",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.brightdata.com/api-reference/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 58,
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Open-source CLI to find usernames across social networks",
+  "auth_methods": [
+   "none"
+  ],
+  "auth_note": "No auth, local tool",
+  "access": "not_applicable",
+  "access_note": "Pip-install and run locally",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "none",
+  "api_note": "Python CLI checks username existence across sites",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "not_a_fit",
+  "blocker": "local_tool_only",
+  "blocker_note": "OSS CLI, not a SaaS API",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Contact and company data enrichment with waterfall providers",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key",
+  "access": "paid_plan",
+  "access_note": "Likely requires sales contact or paid plan",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Enrichment endpoints for contacts and companies",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Unclear self-serve access",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://waterfall.io",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Data enrichment and GTM automation spreadsheet platform",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key for webhook tables; limited public API",
+  "access": "paid_plan",
+  "access_note": "Paid plans required for API/webhook features",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Webhook in/out to tables; no full CRUD public API",
+  "official_mcp": "no",
+  "mcp_note": "No official MCP known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Limited API, paid plan features",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.clay.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Code hosting platform with Git, issues, PRs and Actions",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "OAuth apps, GitHub Apps, personal access tokens",
+  "access": "self_serve",
+  "access_note": "Free account; create PAT or app",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Repos, issues, PRs, actions, orgs, users; hundreds of endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official github-mcp-server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/rest",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Frontend cloud platform for deploying web apps",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Access token; OAuth integrations",
+  "access": "self_serve",
+  "access_note": "Free Hobby account; create token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Projects, deployments, domains, env vars, teams, logs",
+  "official_mcp": "yes",
+  "mcp_note": "Official Vercel MCP (mcp.vercel.com)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Web hosting and deployment platform for static and Jamstack sites",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access token or OAuth",
+  "access": "self_serve",
+  "access_note": "Free account, create PAT",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Sites, deploys, forms, DNS, env vars, builds",
+  "official_mcp": "yes",
+  "mcp_note": "Official Netlify MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api/get-started/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 64,
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "CDN, DNS, security and edge compute platform",
+  "auth_methods": [
+   "bearer_token",
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "API tokens scoped; legacy global key",
+  "access": "self_serve",
+  "access_note": "Free account, create API token",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "DNS, zones, Workers, R2, firewall, Zero Trust; very large API",
+  "official_mcp": "yes",
+  "mcp_note": "Official Cloudflare MCP servers",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.cloudflare.com/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Open-source Postgres backend platform with auth, storage and realtime",
+  "auth_methods": [
+   "bearer_token",
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Project API keys; Management API token or OAuth",
+  "access": "self_serve",
+  "access_note": "Free project; keys in dashboard",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "PostgREST data API, Auth, Storage, Edge Functions, Management API",
+  "official_mcp": "yes",
+  "mcp_note": "Official Supabase MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://supabase.com/docs/guides/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Graph database with cloud Aura service",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "DB user/password via Bolt/HTTP; Aura API uses OAuth client credentials",
+  "access": "self_serve",
+  "access_note": "Free AuraDB instance; Aura API needs client credentials",
+  "api_type": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Query API over HTTP, Bolt driver, Aura management API for instances",
+  "official_mcp": "yes",
+  "mcp_note": "Official neo4j mcp servers (cypher, aura)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://neo4j.com/docs/query-api/current/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud data warehouse platform",
+  "auth_methods": [
+   "jwt",
+   "oauth2",
+   "basic",
+   "other"
+  ],
+  "auth_note": "Key-pair JWT, OAuth, PATs for SQL API",
+  "access": "free_trial",
+  "access_note": "30-day trial with credits; paid afterward",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "api_note": "SQL API, REST APIs for objects, Cortex, connectors",
+  "official_mcp": "yes",
+  "mcp_note": "Official Snowflake-Labs MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only, then paid",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Managed MongoDB cloud with Admin API",
+  "auth_methods": [
+   "other"
+  ],
+  "auth_note": "HTTP Digest with API public/private key; service accounts OAuth",
+  "access": "self_serve",
+  "access_note": "Free M0 cluster; create org API keys",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Admin API: clusters, projects, users, backups, alerts, Data API deprecated",
+  "official_mcp": "yes",
+  "mcp_note": "Official MongoDB MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.mongodb.com/docs/atlas/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Monitoring and observability platform",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key plus application key headers",
+  "access": "free_trial",
+  "access_note": "14-day trial; paid plans after",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Metrics, logs, monitors, dashboards, events, incidents, hundreds of endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official Datadog MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial then paid",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Error tracking and performance monitoring platform",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Auth tokens, org tokens, OAuth",
+  "access": "self_serve",
+  "access_note": "Free developer plan; create token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Issues, events, projects, releases, orgs, alerts",
+  "official_mcp": "yes",
+  "mcp_note": "Official Sentry MCP server (mcp.sentry.dev)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "Connected workspace for docs, wikis and databases",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Internal integration token or public OAuth",
+  "access": "self_serve",
+  "access_note": "Free workspace; create integration",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Pages, databases, blocks, users, comments, search",
+  "official_mcp": "yes",
+  "mcp_note": "Official Notion MCP (mcp.notion.com)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.notion.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_liner": "Spreadsheet-database hybrid for building apps",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access tokens; OAuth",
+  "access": "self_serve",
+  "access_note": "Free plan; create PAT",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Records CRUD, bases, schema, webhooks, comments",
+  "official_mcp": "yes",
+  "mcp_note": "Official Airtable MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://airtable.com/developers/web/api/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Issue tracking and project management for software teams",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal API key or OAuth2",
+  "access": "self_serve",
+  "access_note": "Free plan; create key in settings",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Issues, projects, cycles, teams, comments via GraphQL",
+  "official_mcp": "yes",
+  "mcp_note": "Official Linear MCP (mcp.linear.app)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.linear.app/docs",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "one_liner": "Issue and project tracking by Atlassian",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "API token with email basic auth; OAuth 2.0 3LO",
+  "access": "self_serve",
+  "access_note": "Free Jira Cloud plan; create API token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Issues, projects, workflows, users, boards via Cloud REST v3",
+  "official_mcp": "yes",
+  "mcp_note": "Official Atlassian Remote MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work management and task tracking platform",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Personal access token or OAuth",
+  "access": "self_serve",
+  "access_note": "Free account; create PAT",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tasks, projects, workspaces, teams, custom fields, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Official Asana MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work OS for boards and workflow management",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal API token or OAuth",
+  "access": "self_serve",
+  "access_note": "Free/trial account; token in profile",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Boards, items, columns, users, updates via GraphQL",
+  "official_mcp": "yes",
+  "mcp_note": "Official monday.com MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.monday.com/api-reference/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_liner": "Project management and productivity platform",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal API token or OAuth",
+  "access": "self_serve",
+  "access_note": "Free plan; token in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tasks, lists, spaces, goals, time tracking, ~100 endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official ClickUp MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://clickup.com/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "Collaborative docs combined with tables and apps",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API token from account settings",
+  "access": "self_serve",
+  "access_note": "Free account; generate token",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Docs, pages, tables, rows, formulas, controls",
+  "official_mcp": "yes",
+  "mcp_note": "Official Coda MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://coda.io/developers/apis/v1",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "Spreadsheet-style work management platform",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "API access token or OAuth",
+  "access": "free_trial",
+  "access_note": "Trial then paid; API needs paid plan",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Sheets, rows, columns, workspaces, reports, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Official Smartsheet MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API requires paid plan",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://smartsheet.redoc.ly/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Time tracking and invoicing software",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access token or OAuth2 with Account ID header",
+  "access": "free_trial",
+  "access_note": "30-day trial; free plan limited to 1 seat",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Time entries, projects, clients, invoices, expenses, users",
+  "official_mcp": "no",
+  "mcp_note": "No official MCP known",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.getharvest.com/api-v2/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_liner": "Online payments processing platform",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Secret API keys; OAuth for Connect",
+  "access": "self_serve",
+  "access_note": "Free account with test mode keys",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Payments, customers, subscriptions, invoices, Connect, hundreds of endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official Stripe MCP (mcp.stripe.com)",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.stripe.com/api",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "one_liner": "Bank account linking and financial data API",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "client_id and secret in request body",
+  "access": "approval",
+  "access_note": "Sandbox free; production requires application and approval",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Link, Auth, Transactions, Identity, Balance, Investments, Transfer",
+  "official_mcp": "yes",
+  "mcp_note": "Official Plaid MCP server (Dashboard/sandbox)",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Production access needs approval",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://plaid.com/docs/api/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Cryptocurrency exchange",
+  "auth_methods": [
+   "hmac_signature",
+   "api_key"
+  ],
+  "auth_note": "API key with HMAC SHA256 signature",
+  "access": "self_serve",
+  "access_note": "Account with KYC; create API key",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Spot, margin, futures, wallet, market data",
+  "official_mcp": "no",
+  "mcp_note": "Community MCP servers; official skills exist",
+  "verdict": "ready_with_gate",
+  "blocker": "tos_restriction",
+  "blocker_note": "Trading API; regional restrictions and KYC",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://binance-docs.github.io/apidocs/spot/en/",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "Payment gateway for card processing",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "Security key",
+  "access": "approval",
+  "access_note": "Merchant account required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Payment transaction API (NMI-style)",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "partner_approval",
+  "blocker_note": "Requires merchant onboarding",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.paygent.co.jp",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_liner": "Payment API for AI agents",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key",
+  "access": "self_serve",
+  "access_note": "Sign up for key",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Agent payments endpoints",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://ipayx.ai/docs",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Small business accounting software",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0 only",
+  "access": "self_serve",
+  "access_note": "Intuit developer account with sandbox; production needs app assessment",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Invoices, customers, bills, payments, accounts, reports",
+  "official_mcp": "yes",
+  "mcp_note": "Official Intuit QuickBooks MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Production keys require app review",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud accounting software",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0 auth code and client credentials",
+  "access": "self_serve",
+  "access_note": "Free developer account with demo company; commercial tier limits",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Accounting, Payroll, Files, Assets, Projects APIs",
+  "official_mcp": "yes",
+  "mcp_note": "Official Xero MCP server",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.xero.com/documentation/",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards and spend management",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "User token or OAuth",
+  "access": "approval",
+  "access_note": "Requires Brex customer account; tokens from dashboard",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Transactions, cards, users, expenses, payments, budgets",
+  "official_mcp": "no",
+  "mcp_note": "None official",
+  "verdict": "ready_with_gate",
+  "blocker": "partner_approval",
+  "blocker_note": "Must be Brex customer",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.brex.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards and spend management platform",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth2 client credentials",
+  "access": "approval",
+  "access_note": "Requires Ramp customer account to create developer app",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Transactions, cards, users, bills, reimbursements",
+  "official_mcp": "yes",
+  "mcp_note": "Official Ramp MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "partner_approval",
+  "blocker_note": "Must be a Ramp customer",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ramp.com/developer-api/v1/overview/introduction",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Private market data and research platform",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "auth_note": "API key issued on contract",
+  "access": "partner_gated",
+  "access_note": "Enterprise subscription and contact sales",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Deals, companies, investors, funds data",
+  "official_mcp": "no",
+  "mcp_note": "None official",
+  "verdict": "blocked",
+  "blocker": "enterprise_only",
+  "blocker_note": "Enterprise contract required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://pitchbook.com/products/data-feeds",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Google AI research notebook and source summarizer",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Google Cloud OAuth for Enterprise API",
+  "access": "paid_plan",
+  "access_note": "Enterprise API requires Google Cloud project with NotebookLM Enterprise license",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Notebooks and sources management via Discovery Engine API",
+  "official_mcp": "no",
+  "mcp_note": "No official MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "enterprise_only",
+  "blocker_note": "Enterprise only; no consumer API",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting transcription and notes",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth for MCP",
+  "access": "paid_plan",
+  "access_note": "Paid plans for integrations/API",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Transcripts and meetings access",
+  "official_mcp": "yes",
+  "mcp_note": "Official Otter MCP server",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Business plan features",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.otter.ai",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting recorder and note taker",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "API key or OAuth",
+  "access": "self_serve",
+  "access_note": "Free plan; API key in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Meetings, transcripts, summaries, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Official Fathom MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.fathom.ai",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI search engine for scientific research",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth",
+  "access": "paid_plan",
+  "access_note": "Limited public API; partner or paid",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Paper search",
+  "official_mcp": "yes",
+  "mcp_note": "Official Consensus MCP",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Limited availability",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://consensus.app",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Document parsing API for LLM pipelines",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer",
+  "access": "free_trial",
+  "access_note": "Sign up with free credits; paid after",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Parse, extract, split, edit endpoints",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid after trial credits",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.reducto.ai",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Autonomous AI software engineer",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer",
+  "access": "paid_plan",
+  "access_note": "Paid Devin plan required; API keys in settings",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Sessions, messages, knowledge, secrets endpoints",
+  "official_mcp": "yes",
+  "mcp_note": "Official Devin MCP server (mcp.devin.ai)",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid subscription required",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.devin.ai/api-reference/overview",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI image and video generation platform",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key and secret",
+  "access": "paid_plan",
+  "access_note": "Credits purchase for API usage",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Image and video generation endpoints",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Paid credits",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://higgsfield.ai",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Command-line tool rendering Mermaid diagrams to images",
+  "auth_methods": [
+   "none"
+  ],
+  "auth_note": "No auth",
+  "access": "not_applicable",
+  "access_note": "npm install locally",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "none",
+  "api_note": "CLI mmdc renders mermaid to svg/png/pdf",
+  "official_mcp": "no",
+  "mcp_note": "None",
+  "verdict": "not_a_fit",
+  "blocker": "local_tool_only",
+  "blocker_note": "Local CLI tool",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": ""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_liner": "API for fetching YouTube video transcripts",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API key bearer",
+  "access": "free_trial",
+  "access_note": "Signup with free credits",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Transcript retrieval endpoint",
+  "official_mcp": "no",
+  "mcp_note": "None known",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Credits limited",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://transcriptapi.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting recorder and notes",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "OAuth or API key",
+  "access": "self_serve",
+  "access_note": "Free plan; API access on account",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Recordings, transcripts, highlights, webhooks",
+  "official_mcp": "yes",
+  "mcp_note": "Official Grain MCP",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.grain.com",
+    "quote": ""
+   }
+  ],
+  "confidence": "medium"
+ }
+]

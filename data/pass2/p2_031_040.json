@@ -1,0 +1,477 @@
+[
+ {
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Manage Google Ads campaigns, accounts and reporting via API.",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "auth_note": "OAuth2 (user or service account) tied to a Google Cloud project; developer tokens sunset Sept 9, 2026, access now granted per Cloud project.",
+  "access": "approval",
+  "access_note": "Sign up in Google Cloud Console; Explorer/Basic auto-reviewed after brand verification; Standard needs manual review (~10 business days). Explorer limited to 2,880 prod ops/day.",
+  "api_type": [
+   "grpc",
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Google Ads API (gRPC/REST) covers campaigns, ad groups, ads, keywords, budgets, reporting (GAQL).",
+  "official_mcp": "yes",
+  "mcp_note": "Official googleads/google-ads-mcp (github.com/googleads/google-ads-mcp), documented at developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Production use needs Cloud-project access level (Explorer/Basic automated; Standard manual review) plus brand verification.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "quote": "Your API access levels are determined by the Google Cloud project you used to generate your OAuth credentials."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "quote": "For new Basic and Standard access applications, you must complete brand verification for your Google Cloud project."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "quote": "Standard | Test and production accounts | Unlimited operations / day"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "quote": "Google Ads MCP server: Developer integration guide"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "quote": "You no longer need a Google Ads manager account to use the Google Ads API."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage Facebook/Instagram ad campaigns and insights via Marketing API.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Facebook Login OAuth with ads_read/ads_management permissions; system user tokens for business use.",
+  "access": "approval",
+  "access_note": "Self-serve app creation gives Limited access tier (dev only, heavily rate-limited); Full tier and advanced permissions for others' ad accounts need App Review and business verification.",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Graph-based Marketing API: ad accounts, campaigns, ad sets, ads, creatives, insights, audiences, catalogs.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Meta Ads MCP server / Ads AI connectors documented on developers.facebook.com (ads-mcp-server-overview).",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Advanced access to ads_management/ads_read for other people's accounts requires App Review; Full tier needs 500 calls/15 days and <15% errors.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+    "quote": "use the scope parameter to prompt them for the ads_management or ads_read permissions"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+    "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+    "quote": "Automatically granted when you add the Marketing API product to your app."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+    "quote": "Ads MCP Server | Meta for Developers"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+    "quote": "If you're managing other people's ad accounts, you need advanced access to the ads_read and/or ads_management permissions."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Manage LinkedIn ad accounts, campaigns, creatives and reporting via Advertising API.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "3-legged OAuth only; 2-legged client credentials not available for marketing use cases.",
+  "access": "approval",
+  "access_note": "Create app, apply for Advertising API product with access form; Development tier (5 ad accounts) after approval, Standard tier needs further review with demo.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Versioned Marketing APIs: ad accounts, campaigns, creatives, conversions, reporting, lead gen forms, organizations/posts.",
+  "official_mcp": "no",
+  "mcp_note": "No first-party LinkedIn Ads MCP found in vendor docs; third-party only.",
+  "verdict": "ready_with_gate",
+  "blocker": "partner_approval",
+  "blocker_note": "Advertising API product requires LinkedIn review of use case before credentials work; Standard tier needs second review.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+    "quote": "The 2-legged client credentials flow is not available for any marketing use cases."
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+    "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API."
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+    "quote": "Add up to 5 accounts to manage in the Development Tier."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+    "quote": "Apply for Development tier access: 1. Create an app, add Advertising API, and complete the access form"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "All-in-one CRM, marketing automation and funnel platform for agencies.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "OAuth 2.0 for marketplace apps; Private Integration Tokens (bearer) for own account/agency.",
+  "access": "paid_plan",
+  "access_note": "API available on all paid plans (Starter $97/mo and up); no free tier found. Marketplace developer account is free for OAuth apps.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "v2 API: contacts, conversations, opportunities, calendars, workflows, locations, payments, social planner and more.",
+  "official_mcp": "yes",
+  "mcp_note": "Official HighLevel MCP at https://services.leadconnectorhq.com/mcp/anthropic/v2 (marketplace.gohighlevel.com/docs/other/mcp).",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "End users need a paid HighLevel subscription (Starter $97/mo); free developer sandbox not confirmed on fetched pages.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Private Integration Tokens and OAuth 2.0 are the recommended authentication methods."
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+    "quote": "\"url\": \"https://services.leadconnectorhq.com/mcp/anthropic/v2\""
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+    "quote": "Private Integration Tokens | Available | Available | Available"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 35,
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Email marketing platform with audiences, campaigns and automation.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic",
+   "bearer_token"
+  ],
+  "auth_note": "API key or OAuth2 token, sent via HTTP Basic or Bearer; OAuth2 for multi-user apps.",
+  "access": "self_serve",
+  "access_note": "Free Mailchimp account lets you generate API keys; OAuth app registration is self-serve. Free plan feature limits apply.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Marketing API v3 at api.mailchimp.com/3.0: lists, members, campaigns, automations, templates, reports, ecommerce; Transactional (Mandrill) is separate.",
+  "official_mcp": "yes",
+  "mcp_note": "Official MCP at https://mailchimp.com/developer/_mcp/server; separate Transactional MCP guide.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "quote": "API keys and OAuth 2 access tokens are sent the same way."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "quote": "You can use either HTTP Basic Authentication or Bearer Authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://mailchimp.com/help/about-api-keys/",
+    "quote": "API keys allow other apps access to your account without a password."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+    "quote": "https://mailchimp.com/developer/_mcp/server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+    "quote": "The root url for the API is https://api.mailchimp.com/3.0/"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 36,
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Customer data and email/SMS marketing automation for ecommerce.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Private API key with scopes (Klaviyo-API-Key header) for own account; OAuth for tech partners; public key for client APIs.",
+  "access": "self_serve",
+  "access_note": "Any Klaviyo account can create private API keys in Settings > API keys; OAuth requires partner app registration.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Revisioned JSON:API REST: profiles, lists, segments, events, metrics, campaigns, flows, templates, catalogs, coupons, reporting.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP https://mcp.klaviyo.com/mcp (OAuth, 260+ tools) and local klaviyo-mcp-server.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Under the Private API Keys section, select Create Private API Key."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+    "quote": "enter https://mcp.klaviyo.com/mcp with no trailing slash"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Private API keys can be used to read and write data to your Klaviyo account."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "All-in-one funnel, email, course and affiliate platform for online businesses.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "Public API key generated in account settings; up to 3 keys per account.",
+  "access": "self_serve",
+  "access_note": "Pricing page lists API requests per minute for the Free plan (30), implying API key generation works without paying; not explicitly confirmed.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Public API: contacts, tags, custom fields, newsletters/campaigns, funnels, courses, communities, products, offers, webhooks, bookings, SMS templates.",
+  "official_mcp": "no",
+  "mcp_note": "No official MCP confirmed from vendor pages; one third-party review mentions an MCP server (unverified).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "You can create up to 3 API keys per account."
+   },
+   {
+    "field": "access",
+    "url": "https://systeme.io/pricing",
+    "quote": "API requests per minute Free: 30"
+   },
+   {
+    "field": "api_type",
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Contacts, tags, and custom field management; Newsletters and campaigns management; Funnels and Page editor management"
+   },
+   {
+    "field": "verdict",
+    "url": "https://systeme.io/pricing",
+    "quote": "API requests per minute Free: 30"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 38,
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage Pins, boards, ads and catalogs on Pinterest.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0 access tokens required for user authorization; app secret withheld until Standard access.",
+  "access": "approval",
+  "access_note": "Apply for API access to get Trial tier; Standard upgrade needs demo video of OAuth flow and review. Trial restricts writes (e.g. POST /v5/pins) per community reports.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "API v5: pins, boards, user account, ad accounts/campaigns/ads, audiences, catalogs, analytics, sandbox.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Pinterest MCP at https://api.pinterest.com/mcp (Bearer token), developers.pinterest.com/about-pinterest-mcp.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Trial access is manual-approval and limited; full functionality requires Standard upgrade with demo review.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "The compliant way for an app to authenticate a user is by obtaining an OAuth access token."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "If approved for API use, your app receives Trial access, which is best for exploring our API features."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+    "quote": "\"url\": \"https://api.pinterest.com/mcp\""
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "Your app must already be approved for Trial access and comply with our Developer Guidelines."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 39,
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Publish Threads posts, read replies and insights via Threads API.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Threads user access tokens (OAuth 2.0): 1-hour short-lived, exchangeable for 60-day long-lived, refreshable.",
+  "access": "approval",
+  "access_note": "Create Meta app with Threads use case; app roles/testers work immediately, other users require App Review per permission and a published app.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Endpoints for profile, media publishing (text/image/video/carousel), replies, reply management, insights.",
+  "official_mcp": "no",
+  "mcp_note": "No official Threads MCP found on Meta pages.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "threads_basic / threads_content_publish / threads_read_replies need App Review for non-tester users.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "each permission must first be approved through the App Review process, and your app must be published."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "To access the Threads API, create an app and pick the Threads use case."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "Threads testers can grant your app these permissions at any time."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Twilio SendGrid transactional and marketing email delivery API.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "basic"
+  ],
+  "auth_note": "API key as Bearer token (scoped permissions); Basic auth with username apikey for some services.",
+  "access": "free_trial",
+  "access_note": "Free plan retired May 27, 2025; new accounts get 60-day free trial (100 emails/day), paid plan after. Now under Twilio.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Web API v3: mail send, templates, contacts/lists, marketing campaigns/single sends, suppressions, stats, webhooks, subusers.",
+  "official_mcp": "no",
+  "mcp_note": "Only Twilio docs MCP (mcp.twilio.com/docs) and community SendGrid MCP servers; no official SendGrid API MCP.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial lasts 60 days; ongoing use requires a paid plan.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+    "quote": "To use an API key, pass an Authorization header with a value of Bearer <Your-API-Key-Here>"
+   },
+   {
+    "field": "access",
+    "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+    "quote": "Free trial lets you send 100 emails/day for 60 days"
+   },
+   {
+    "field": "access",
+    "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+    "quote": "Twilio SendGrid will be retiring its Free Email API and Free Marketing Campaigns plan starting May 27, 2025."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "quote": "claude mcp add --transport http twilio-docs https://mcp.twilio.com/docs"
+   }
+  ],
+  "confidence": "high"
+ }
+]

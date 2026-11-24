@@ -1,0 +1,10 @@
+{
+ "method": "Applied by the reviewer AFTER scoring, only where a vendor page was re-read and contradicted the agent. Accuracy figures on the page are measured on agent output before these fixes.",
+ "corrections": [
+  {"id": 40, "app": "SendGrid", "field": "auth_methods", "to": ["api_key"], "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication", "why": "v3 API authenticates with an API key sent as a Bearer header; Basic auth is not supported."},
+  {"id": 41, "app": "Shopify", "field": "verdict", "to": "ready", "url": "https://shopify.dev/docs/apps/build/authentication-authorization", "why": "App review applies only to App Store listing; custom apps on a free dev store need none."},
+  {"id": 41, "app": "Shopify", "field": "blocker", "to": "none", "url": "https://shopify.dev/docs/apps/build/authentication-authorization", "why": "Same as above."},
+  {"id": 42, "app": "WooCommerce", "field": "official_mcp", "to": "beta", "url": "https://developer.woocommerce.com/docs/features/mcp/", "why": "WooCommerce MCP is a developer preview."},
+  {"id": 66, "app": "Neo4j", "field": "api_type", "to": ["rest"], "url": "https://neo4j.com/docs/query-api/current/", "why": "'other' is not a schema value; HTTP Query API is REST (Bolt is a driver protocol)."}
+ ]
+}

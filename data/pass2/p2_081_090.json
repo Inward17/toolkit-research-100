@@ -1,0 +1,508 @@
+[
+ {
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_liner": "Online payments, billing and financial infrastructure platform.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Secret/restricted API keys (sk_/rk_); OAuth for Stripe Apps and MCP; agent API keys.",
+  "access": "self_serve",
+  "access_note": "Create a free Stripe account; sandbox test keys are available immediately in the Dashboard; live keys after account activation.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Hundreds of endpoints across Payments, Billing, Connect, Treasury, Issuing, Identity etc.; API v1 and v2.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP server https://mcp.stripe.com (public preview), OAuth or agent API key.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.stripe.com/keys",
+    "quote": "Stripe uses API keys to authenticate requests from your integration"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.stripe.com/keys",
+    "quote": "Create or select a sandbox and use its test keys."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.stripe.com/keys",
+    "quote": "Use API keys to authenticate API requests."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.stripe.com/mcp",
+    "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.stripe.com/keys",
+    "quote": "When you're ready to accept real payments, Switch to your live mode keys"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "one_liner": "Bank account linking and financial data API (Auth, Transactions, Balance, Identity).",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "client_id + secret per environment; Link flow yields per-Item access_token; OAuth client_credentials for Dashboard MCP.",
+  "access": "approval",
+  "access_note": "Sign up free for Sandbox keys; free Trial plan (US/CA, 10 live Items); full Production requires an application that enters review.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Products: Auth, Transactions, Balance, Identity, Assets, Liabilities, Investments, Income, Transfer, Link tokens; many endpoints.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Dashboard MCP server https://api.dashboard.plaid.com/mcp/ (diagnostics/analytics only, not end-user bank data); separate sandbox MCP in plaid/ai-coding-toolkit.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Production access needs a reviewed application and paid plan; Trial capped at 10 Items.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://plaid.com/docs/quickstart/",
+    "quote": "client_id Private identifier for your team; secret Private key, one for each of the two environments"
+   },
+   {
+    "field": "access",
+    "url": "https://support.plaid.com/hc/en-us/articles/39917307426967-How-do-I-upgrade-from-the-Trial-plan-to-a-paid-Production-plan",
+    "quote": "Submit your application. You will see a confirmation and your application will enter review."
+   },
+   {
+    "field": "api_type",
+    "url": "https://plaid.com/docs/quickstart/",
+    "quote": "Call /link/token/create to create a link_token"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid."
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110502116887-What-are-Plaid-s-prices-and-pricing-plans-and-how-do-they-differ",
+    "quote": "The Trial plan lets you use Plaid with real production data at no cost, with a cap of 10 Production Items."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Crypto exchange with spot, margin and futures trading APIs.",
+  "auth_methods": [
+   "api_key",
+   "hmac_signature"
+  ],
+  "auth_note": "API key + secret with HMAC SHA256 signed requests (X-MBX-APIKEY); Ed25519/RSA self-generated keys also supported.",
+  "access": "self_serve",
+  "access_note": "Log in, enable 2FA, complete identity verification (and a Spot deposit per support page), then create keys in API Management.",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Spot, Margin, USDS-M/COIN-M futures, Convert, Wallet, etc.; REST plus WebSocket API and streams.",
+  "official_mcp": "yes",
+  "mcp_note": "Binance MCP Server in developers.binance.com agent-native docs; operates in a dedicated Agentic sub-account. Many community MCPs exist too.",
+  "verdict": "ready_with_gate",
+  "blocker": "other",
+  "blocker_note": "Real-money exchange account needs KYC and funded account; trading actions are high risk for an agent.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/general-info",
+    "quote": "HMAC SHA256 signature: curl -H \"X-MBX-APIKEY: ...\""
+   },
+   {
+    "field": "access",
+    "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+    "quote": "before creating an API key, you need to make a deposit of any amount to your Spot Account"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.binance.com/en/docs/products/spot/web-socket-api",
+    "quote": "General WebSocket API Information"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+    "quote": "Connect your AI agent to Binance to read market data, check balances, and trade Spot / Margin / Convert / Futures"
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+    "quote": "Verify your identity."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "Payment gateway; hint says NMI-powered but no vendor page confirms the product.",
+  "auth_methods": [
+   "other"
+  ],
+  "auth_note": "Not established: pay-gent.com page states no auth scheme. NMI gateway itself uses private/security keys.",
+  "access": "partner_gated",
+  "access_note": "pay-gent.com offers only a Get Started/contact link; no public self-serve signup or API credentials documented. NMI-based access would need a merchant/gateway account via NMI partners.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "pay-gent.com claims developer-friendly APIs but no public docs found; NMI v5 API (docs.nmi.com) covers sales etc. Vendor identity ambiguous (also Japanese Paygent).",
+  "official_mcp": "no",
+  "mcp_note": "No official MCP found.",
+  "verdict": "blocked",
+  "blocker": "partner_approval",
+  "blocker_note": "No public Paygent Connect docs; NMI-style gateway needs merchant/partner account.",
+  "evidence": [
+   {
+    "field": "access",
+    "url": "https://www.pay-gent.com/",
+    "quote": "Seamless Payments, Unmatched Security."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.nmi.com/docs/payment-component",
+    "quote": "'Authorization': 'YOUR_PRIVATE_KEY_HERE'"
+   },
+   {
+    "field": "api_type",
+    "url": "https://www.pay-gent.com/",
+    "quote": "Developer-first payment infrastructure for the next generation of fintech."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://www.pay-gent.com/",
+    "quote": "No MCP mentioned on page (absence)"
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.pay-gent.com/",
+    "quote": "Get Started link points to customer-support contact page"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_liner": "MCP-native FX forensic audit engine comparing transaction rates to mid-market.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "auth_note": "Authorization: Bearer ipx_live_<key>; generate key in dashboard.",
+  "access": "paid_plan",
+  "access_note": "Web audits free (3 free audits); API plans start at Developer $99/mo (100 audits, sandbox).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "4 endpoints: POST /v1/audit, GET/PUT/DELETE /v1/score-config.",
+  "official_mcp": "yes",
+  "mcp_note": "Native MCP server at https://mcp.ipayx.ai/mcp.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API keys require a paid developer plan from $99/mo; tiny niche API.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.ipayx.ai/developers",
+    "quote": "Authorization: Bearer ipx_live_your_key"
+   },
+   {
+    "field": "access",
+    "url": "https://www.ipayx.ai/developers",
+    "quote": "Developer - $99/mo - 100 audits/mo - sandbox"
+   },
+   {
+    "field": "api_type",
+    "url": "https://www.ipayx.ai/developers",
+    "quote": "POST /v1/audit Returns structured FX audit analysis"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://www.ipayx.ai/developers",
+    "quote": "https://mcp.ipayx.ai/mcp"
+   },
+   {
+    "field": "verdict",
+    "url": "https://www.ipayx.ai/?lang=en",
+    "quote": "Three free audits. Then transparent usage-based pricing."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Intuit accounting software for small business (QuickBooks Online API).",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0 authorization code; access tokens per realm.",
+  "access": "approval",
+  "access_note": "Free Intuit developer account with sandbox companies; production keys require completing Intuit's app assessment questionnaire (even private apps).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Accounting API: 29 entity types (invoices, customers, bills, payments...), reports, Payments, Webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official intuit/quickbooks-online-mcp-server (140+ tools, local, OAuth) plus Intuit Developer MCP docs and Claude connector.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Production keys need the app assessment questionnaire/review.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization."
+   },
+   {
+    "field": "access",
+    "url": "https://help.developer.intuit.com/s/question/0D5TR00000fHVqB0AW/will-i-need-to-prepare-for-an-app-review-to-get-production-keys-for-a-private-app",
+    "quote": "All apps that use Intuit APIs or keys to access production data must ... complete an app assessment questionnaire"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "quote": "Authorization is essential for both testing via sandbox companies and..."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "quote": "The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "quote": "If you're implementing authorization for a live, in-production app, go to the Production section"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud accounting platform for small businesses.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0 authorization code/PKCE; client_credentials via paid Custom Connections.",
+  "access": "self_serve",
+  "access_note": "Free developer account on Starter tier; uncertified apps limited to 5 tenants, more needs paid tier; Custom Connection costs per org monthly.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Accounting, Assets, Bank Feeds, Files, Payroll, Projects, Finance APIs.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP https://api.xero.com/mcp/v1 and open-source XeroAPI/xero-mcp-server.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Starter tier capped at 5 connections; beyond requires Core tier pricing.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "quote": "Xero's API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE)"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "quote": "Apps using the code or PKCE flow can connect to a maximum of 5 tenants."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "quote": "Xero's API supports the authorization code grant type"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+    "quote": "The Developer Remote MCP Server is a hosted Model Context Protocol (MCP) server run by Xero."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "quote": "To connect to more than 5 tenants you need to upgrade to the Core Tier"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards, spend management and banking for businesses.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "User token generated in dashboard (Bearer) for own account; OAuth2 for partner/platform apps.",
+  "access": "approval",
+  "access_note": "Quickstart assumes you are a Brex customer with admin access; tokens generated by account admin/card admin. Partner OAuth requires Brex partnership.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Team, Transactions, Payments, Expenses, Budgets, Webhooks APIs; some in alpha/beta stages.",
+  "official_mcp": "yes",
+  "mcp_note": "Official hosted MCP https://api.brex.com/mcp with OAuth (DCR).",
+  "verdict": "ready_with_gate",
+  "blocker": "other",
+  "blocker_note": "Need an onboarded Brex customer account; no public sandbox signup found.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.brex.com/docs/authentication",
+    "quote": "generate a user token from your Brex dashboard and pass it along in your API call headers"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.brex.com/guides/quickstart",
+    "quote": "This guide assumes you are a Brex customer with admin access to your dashboard."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.brex.com/guides/quickstart",
+    "quote": "curl -i -X GET https://api.brex.com/v2/users/me"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.brex.com/docs/mcp",
+    "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.brex.com/guides/api-launch-stages",
+    "quote": "Available by default to all Brex customers."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards and spend management platform.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "OAuth 2.0: client credentials (internal), authorization code (third-party), refresh token.",
+  "access": "approval",
+  "access_note": "Create app in Ramp Developer Console; sandbox and production need separate apps; an Admin/Business Owner must approve business-wide apps. Requires Ramp account.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Transactions, cards, users, reimbursements, bills, vendors, accounting etc. with scopes.",
+  "official_mcp": "yes",
+  "mcp_note": "Official hosted MCP https://mcp.ramp.com/mcp and open-source ramp-public/ramp-mcp.",
+  "verdict": "ready_with_gate",
+  "blocker": "other",
+  "blocker_note": "Requires a Ramp customer org and admin approval for app access.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "Client Credentials (Internal integrations, server-to-server)"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "For apps that access the whole business, an Admin or Business Owner must approve."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "Your app's client ID from the Ramp Developer Console"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+    "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "Sandbox and production need separate apps."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Private capital markets data and research platform.",
+  "auth_methods": [
+   "other"
+  ],
+  "auth_note": "Auth scheme not documented publicly; API sold via Direct Data team.",
+  "access": "partner_gated",
+  "access_note": "Not self-serve: new customers contact Direct Data team; API/Data Feed quoted separately on top of platform subscription.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "PitchBook API/Data Feed for on-demand data points; public docs not available.",
+  "official_mcp": "yes",
+  "mcp_note": "Premium Connector built on MCP technology exposed through AI partners (e.g. Perplexity); subscribers only.",
+  "verdict": "blocked",
+  "blocker": "enterprise_only",
+  "blocker_note": "Paid enterprise contract needed; no public credentials.",
+  "evidence": [
+   {
+    "field": "access",
+    "url": "https://investordatarooms.com/pitchbook-api/",
+    "quote": "New customers contact the Direct Data team directly."
+   },
+   {
+    "field": "api_type",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "PitchBook's API solution allows you to call specific PitchBook data into your internal business systems on demand."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+    "quote": "PitchBook's Premium Connector (built on MCP server technology)"
+   },
+   {
+    "field": "verdict",
+    "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review",
+    "quote": "Access requires a platform subscription and a separate direct data contract."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Auth scheme not stated on page (absence)"
+   }
+  ],
+  "confidence": "medium"
+ }
+]

@@ -1,0 +1,631 @@
+[
+ {
+  "id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "one_liner": "Ecommerce platform with merchant store admin, products, orders, customers APIs.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "OAuth token exchange/authorization code grant yields access token sent in X-Shopify-Access-Token; client credentials for own-org stores.",
+  "access": "self_serve",
+  "access_note": "Create an app via Shopify CLI/dev dashboard and install on a free development store; public distribution and protected customer data need Shopify review.",
+  "api_type": [
+   "graphql",
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "GraphQL Admin API covers products, orders, customers, inventory, fulfillment, discounts, metafields; plus Storefront and Customer Account APIs. REST Admin is legacy (not re-verified on page).",
+  "official_mcp": "yes",
+  "mcp_note": "Shopify Dev MCP (docs/schema, shopify.dev/docs/apps/build/devmcp) and Storefront/Catalog MCP; no first-party admin store-data MCP confirmed.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Public apps need app review and protected-customer-data approval; some scopes granted per app.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "quote": "Your app sends the token in the `X-Shopify-Access-Token` header on every GraphQL Admin API request."
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "quote": "Shopify grants some access scopes to individual apps rather than to every app that declares them."
+   },
+   {
+    "field": "api_type",
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "quote": "Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://shopify.dev/docs/api/ai-toolkit",
+    "quote": "you can connect to Shopify's developer resources through the Dev MCP server."
+   },
+   {
+    "field": "verdict",
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "quote": "Fields that return a customer's personal data need a separate approval if your app is public."
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": "Evidence quotes re-checked; MCP status consistent (Dev MCP + Storefront MCP official, admin MCP only community)."
+ },
+ {
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_liner": "Open-source WordPress ecommerce plugin with per-store REST API.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "auth_note": "Consumer key/secret generated in WooCommerce admin, used as HTTP Basic auth over HTTPS (query-string fallback). WordPress application passwords used by MCP adapter.",
+  "access": "self_serve",
+  "access_note": "Credentials are per self-hosted store: WooCommerce > Settings > Advanced > REST API > Add key. No vendor approval; the user must own an admin account on their store.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "wc/v3: products, orders, customers, coupons, refunds, shipping, taxes, settings, reports, webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official MCP integration via WordPress MCP Adapter: https://yourstore.com/wp-json/mcp/mcp-adapter-default-server (developer.woocommerce.com/docs/features/mcp).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "choose basic auth and enter your consumer key and consumer secret keys from WooCommerce into the username and password fields."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "Go to WooCommerce > Settings > Advanced; Go to the REST API tab and click Add key"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "WC data to be created, read, updated, and deleted using requests in JSON format"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "quote": "https://yourstore.com/wp-json/mcp/mcp-adapter-default-server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "You may access the API over either HTTP or HTTPS, but HTTPS is recommended where possible."
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": "Evidence re-checked; no change."
+ },
+ {
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "SaaS ecommerce platform with REST and GraphQL APIs for catalog, orders, customers.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Store-level API accounts give an access token sent in X-Auth-Token; app-level OAuth for marketplace apps. Legacy basic-auth accounts unavailable to new stores.",
+  "access": "free_trial",
+  "access_note": "Sign up for a free BigCommerce trial store to get API credentials (create an API account in control panel); free partner sandboxes need the Partner Portal; ongoing use needs a paid plan.",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST V2/V3 and GraphQL Admin/Storefront: catalog, orders, customers, carts, checkout, payments, content, B2B Edition.",
+  "official_mcp": "yes",
+  "mcp_note": "Storefront MCP (GA), WebMCP, and Store Management MCP (early access) at https://api.bigcommerce.com/mcp with OAuth 2.1 PKCE.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Free trial store only; ongoing use needs a paid store plan (partner sandboxes via Partner Portal).",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "Most of our REST endpoints and GraphQL Admin API endpoints use the `X-Auth-Token` header to authenticate"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "Create an OAuth API account to generate access tokens."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "REST endpoints and GraphQL Admin API endpoints"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+    "quote": "sign in through the standard BigCommerce login (OAuth 2.1 with PKCE), and then the user chooses which store to connect."
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "official_mcp",
+    "from": "beta",
+    "to": "yes",
+    "reason": "MCP overview lists Storefront MCP as 'Generally available'; only Store Management MCP is early access.",
+    "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+   },
+   {
+    "field": "evidence.verdict",
+    "from": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "to": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+    "reason": "Old verdict quote (legacy basic auth) did not support verdict; replaced with trial-store quote.",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": "Sandboxes page confirms dev sandboxes are via Partner Portal, so free_trial kept."
+ },
+ {
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Enterprise B2C/B2B commerce platform exposing SCAPI and OCAPI.",
+  "auth_methods": [
+   "oauth2",
+   "jwt"
+  ],
+  "auth_note": "Account Manager OAuth2 bearer tokens (client credentials/auth code) for Admin APIs; SLAS tokens for shopper APIs; OCAPI also supports JWT key pair.",
+  "access": "partner_gated",
+  "access_note": "Requires a B2C Commerce contract; even on-demand sandboxes need purchased sandbox credits, then an API client in Account Manager.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "SCAPI: Shopper (products, baskets, orders, customers, search) and Admin APIs (catalogs, orders, inventory, custom APIs); OCAPI is deprecated.",
+  "official_mcp": "beta",
+  "mcp_note": "B2C Commerce MCP Shopper Service (pilot, contact account executive) plus @salesforce/b2c-dx-mcp developer tooling.",
+  "verdict": "ready_with_gate",
+  "blocker": "enterprise_only",
+  "blocker_note": "Needs a Salesforce commerce contract/tenant; shopper MCP is pilot-only.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-get-started-sandboxes.html",
+    "quote": "To access on-demand sandboxes, you must purchase sandbox credits, set up user roles, configure an API client key, and obtain your realm ID."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "Admin API token | Create an API client in Account Manager"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+    "quote": "To participate in the pilot program: Onboard to SLAS and use the B2C Commerce API (SCAPI). Contact your Salesforce account executive."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "quote": "Admin API token: Create an API client in Account Manager"
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "evidence.auth_methods",
+    "from": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+    "to": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "reason": "Original environments-page quote could not be confirmed; replaced with quote verified on authorization page.",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+   },
+   {
+    "field": "evidence.api_type",
+    "from": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+    "to": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "reason": "Original quote ('Authentication & Authorization') did not support api_type; replaced.",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+   },
+   {
+    "field": "evidence.access",
+    "from": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+    "to": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-get-started-sandboxes.html",
+    "reason": "Stronger evidence for partner_gated: even sandboxes require purchased credits.",
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-get-started-sandboxes.html"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": "developer.salesforce.com returns 403 to plain HTTP clients but loads via firecrawl (status 200); authorization and MCP pilot quotes verified there."
+ },
+ {
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_liner": "Self-hosted or cloud commerce platform with REST, GraphQL, SOAP web APIs.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Integration (OAuth 1.0a) creates indefinite access tokens; admin and customer tokens via login endpoints.",
+  "access": "self_serve",
+  "access_note": "Magento Open Source is free to self-host; create an Integration in admin to get tokens. Adobe Commerce is licensed per merchant.",
+  "api_type": [
+   "rest",
+   "graphql",
+   "soap"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Web API covers catalog, orders, customers, carts, inventory, CMS; GraphQL storefront. SOAP/GraphQL not re-verified on fetched excerpts.",
+  "official_mcp": "beta",
+  "mcp_note": "Adobe Commerce MCP (Experience League Commerce MCP overview) and App Builder MCP; miniOrange MCP is third-party.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+    "quote": "OAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+    "quote": "Integration: The merchant determines which Commerce resources the integration can access. Indefinite."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.adobe.com/commerce/webapi/rest/",
+    "quote": "REST API Overview"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+    "quote": "The Commerce MCP for Adobe Commerce helps developers build custom agentic experiences from discovery to checkout"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+    "quote": "It lasts until it is manually revoked."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": "Experience League MCP page is a video page with no text on scrape; third-party source says Adobe's released Commerce MCPs are dev tools / early access, so 'beta' kept."
+ },
+ {
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_liner": "Website builder with Commerce APIs for orders, products, inventory, profiles.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "API keys per site (paid plans); OAuth only for registered Squarespace Extensions.",
+  "access": "paid_plan",
+  "access_note": "API keys require a paid Squarespace plan (Orders/Inventory/Transactions APIs on Core, Plus, Advanced, Commerce Advanced; no free plan); OAuth only for registered Squarespace Extensions.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Commerce APIs: Orders, Products, Inventory, Transactions, Profiles, Webhooks, Forms, Contacts; no site-content CRUD.",
+  "official_mcp": "yes",
+  "mcp_note": "https://mcp.squarespace.com/mcp; Commerce tools (contacts, products, orders) require sign-in and are only in Claude and ChatGPT.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API keys need a paid plan (Core or higher); OAuth requires Squarespace Extension registration.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "every request to Commerce APIs must be authenticated and have minimum permissions."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "quote": "Find, create, and update contacts and products, and look up orders, on one of your websites."
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "quote": "Orders API is available in the Core, Plus, Advanced, and Commerce Advanced plan."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "access_note",
+    "from": "Developer API keys need a Commerce Advanced plan (about $52/mo per third-party); OAuth clients need approval as a registered extension developer.",
+    "to": "API keys require a paid Squarespace plan (Orders/Inventory/Transactions APIs on Core, Plus, Advanced, Commerce Advanced; no free plan); OAuth only for registered Squarespace Extensions.",
+    "reason": "Help center lists Core/Plus/Advanced plans too, not only Commerce Advanced.",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+   },
+   {
+    "field": "blocker_note",
+    "from": "API keys need Commerce Advanced; OAuth requires extension approval.",
+    "to": "API keys need a paid plan (Core or higher); OAuth requires Squarespace Extension registration.",
+    "reason": "Same as access_note.",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ },
+ {
+  "id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "one_liner": "Embeddable ecommerce widget and store backend by Lightspeed.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Secret/public access tokens (non-expiring) sent as Bearer; OAuth 2.0 for public apps.",
+  "access": "paid_plan",
+  "access_note": "Only stores on paid plans can access the API; developers can email Ecwid API support for a free paid-plan upgrade of a test store (customization projects, App Market apps, templates).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST API for products, categories, orders, customers, discounts, shipping/payment methods, store profile.",
+  "official_mcp": "no",
+  "mcp_note": "Only third-party MCP wrappers (Zapier, Truto, Konnectify); no vendor MCP found.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API requires a paid plan unless dev free upgrade applies.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "quote": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Only stores on paid plans can access API."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.ecwid.com/api-reference",
+    "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://zapier.com/mcp/ecwid",
+    "quote": "Zapier Ecwid by Lightspeed MCP lets you connect Ecwid by Lightspeed's actions with any AI tool that supports MCP"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Ecwid provides a free upgrade to a paid plan if"
+   }
+  ],
+  "confidence": "medium",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": "Free dev upgrade confirmed but requires emailing Ecwid (human step); paid_plan kept. MCP search found only third-party wrappers."
+ },
+ {
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_liner": "Creator platform for selling digital products and memberships.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Personal access token generated in settings, or OAuth2 authorization-code for apps; tokens do not expire until revoked.",
+  "access": "self_serve",
+  "access_note": "Free account; create an application in Settings > Advanced and click Generate access token.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Products, variants, offer codes, sales, subscribers, licenses, resource subscriptions (webhooks), user.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Gumroad MCP at gumroad.com/mcp using OAuth; community gumroad-mcp also exists.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "we do not expire the `access_token` until it is revoked manually."
+   },
+   {
+    "field": "access",
+    "url": "https://gumroad.com/api",
+    "quote": "On the application page, click Generate access token to get the token you will use with the API."
+   },
+   {
+    "field": "api_type",
+    "url": "https://gumroad.com/api",
+    "quote": "curl https://api.gumroad.com/v2/products/"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://gumroad.com/mcp",
+    "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account."
+   },
+   {
+    "field": "verdict",
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "if you only want to use the API on your own Gumroad account, you can manually generate an access token"
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": "gumroad.com/api loads via firecrawl and quotes are present; MCP page confirmed."
+ },
+ {
+  "id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_liner": "Amazon seller APIs for listings, orders, inventory, fees, reports, finances.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Login with Amazon OAuth2: refresh token exchanged for LWA access token sent in x-amz-access-token; no SigV4 signing needed (example call has no signing info); RDTs for PII operations.",
+  "access": "approval",
+  "access_note": "Needs a Professional Seller account, register as developer in Solution Provider Portal, role selection; restricted roles/public apps need Amazon review.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Orders, Listings Items, Catalog, FBA Inventory, Reports, Finances, Feeds, Pricing, Notifications; many versioned APIs.",
+  "official_mcp": "yes",
+  "mcp_note": "Amazon-published @amazon-sp-api-release/sp-api-dev-mcp (local, dev assistant and workflow servers), announced in amzn/selling-partner-api-samples.",
+  "verdict": "ready_with_gate",
+  "blocker": "app_review",
+  "blocker_note": "Professional seller account plus role/app approval for non-private or restricted-data use.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "quote": "A Login with Amazon (LWA) access token authorizes your application to take certain actions on behalf of a selling partner."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+    "quote": "Only Professional Selling Accounts can register to develop or integrate with Selling Partner API."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.amazonservices.com/",
+    "quote": "Automate listings, pricing, finance, and AWD workflows."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://github.com/amzn/selling-partner-api-samples/discussions/382",
+    "quote": "Now Available: Local MCP for SP-API"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+    "quote": "Individual accounts are not eligible."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "evidence.auth_methods",
+    "from": "https://advertising.amazon.com/API/docs/en-us/knowledge-hub/blogs/usage-examples/2024-11-sp-and-ads-bp",
+    "to": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "reason": "Replaced JS-rendered advertising blog with SP-API docs page.",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api"
+   },
+   {
+    "field": "official_mcp",
+    "from": "beta",
+    "to": "yes",
+    "reason": "Amazon (amzn org) announced 'Now Available: Local MCP for SP-API' as a released npm package, not a beta.",
+    "url": "https://github.com/amzn/selling-partner-api-samples/discussions/382"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_liner": "Creator payments and checkout platform, now rebranded Commas.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "x-api-key header; separate sandbox and production keys.",
+  "access": "self_serve",
+  "access_note": "Generate key at Account > API Keys in the Commas dashboard; separate free sandbox dashboard (sandbox.commas.net) with its own keys.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Public API: checkout sessions, customers, saved payment methods, charges, invoices, subscriptions, discount codes, webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Commas MCP Connector (local, Claude Desktop .mcpb / Cursor, 44 tools, API key); remote https://www.fanbasis.com/mcp announced as coming soon.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://commasdocs.com/",
+    "quote": "Every API request must include your API key in the `x-api-key` header."
+   },
+   {
+    "field": "access",
+    "url": "https://commasdocs.com/",
+    "quote": "You can generate a new API key from Account → API Keys in your Commas dashboard at any time."
+   },
+   {
+    "field": "api_type",
+    "url": "https://commasdocs.com/",
+    "quote": "Checkout sessions, webhooks, customers, subscriptions, discount codes, and more."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://commasdocs.com/",
+    "quote": "Connect your AI directly to your Commas account using the **Model Context Protocol (MCP)**."
+   },
+   {
+    "field": "verdict",
+    "url": "https://commasdocs.com/",
+    "quote": "Use your sandbox API key from the [sandbox dashboard](https://sandbox.commas.net/). No real charges. Safe to experiment freely."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "official_mcp",
+    "from": "no",
+    "to": "yes",
+    "reason": "Commas docs have a 'Commas MCP Connector' section: 44 tools, Claude Desktop .mcpb extension and Cursor config; remote endpoint for ChatGPT coming soon.",
+    "url": "https://commasdocs.com/"
+   },
+   {
+    "field": "api_type",
+    "from": [
+     "rest",
+     "sdk_only"
+    ],
+    "to": [
+     "rest"
+    ],
+    "reason": "Public REST API under /public-api/; Checkout SDK is an add-on, so sdk_only is wrong.",
+    "url": "https://commasdocs.com/"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": "commasdocs.com is a large single page; firecrawl renders it fully and all quotes were found in the markdown."
+ }
+]

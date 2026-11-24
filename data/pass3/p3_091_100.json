@@ -1,0 +1,624 @@
+[
+ {
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI notebook that summarizes and answers questions over your uploaded sources.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "auth_note": "Google Cloud user access token (gcloud auth print-access-token) as Bearer; licensed user identity, no API key.",
+  "access": "paid_plan",
+  "access_note": "Only the Gemini/NotebookLM Enterprise product has an API: set up Enterprise, buy licenses, assign Cloud NotebookLM User IAM role. Consumer NotebookLM has no API.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "v1alpha projects.locations.notebooks: create, get, listRecentlyViewed, batchDelete, share, plus a sources API. Alpha version.",
+  "official_mcp": "no",
+  "mcp_note": "No official Google NotebookLM MCP; Google Workspace remote MCP servers do not list NotebookLM. Community browser-automation MCP (PleasePrompto/notebooklm-mcp) only.",
+  "verdict": "ready_with_gate",
+  "blocker": "enterprise_only",
+  "blocker_note": "API needs Google Cloud NotebookLM Enterprise licenses per user; v1alpha; consumer app not covered.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "-H \"Authorization:Bearer $(gcloud auth print-access-token)\""
+   },
+   {
+    "field": "access",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Get licenses for Gemini Notebook Enterprise and assign a license to your user account."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "projects.locations.notebooks REST API methods on this page require an authenticated user account"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Grant the Cloud NotebookLM User role (roles/discoveryengine.notebookLmUser) to your user account."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+    "quote": "MCP server for Google NotebookLM. It drives a real Chrome via Patchright"
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "mcp_note",
+    "from": "No official MCP found in vendor pages; only community wrappers.",
+    "to": "No official Google NotebookLM MCP; Google Workspace remote MCP servers do not list NotebookLM. Community browser-automation MCP (PleasePrompto/notebooklm-mcp) only.",
+    "reason": "Replaced absence-only evidence with search result showing only community MCP",
+    "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ },
+ {
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting assistant that records, transcribes and summarizes conversations.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "MCP uses OAuth 2.1 browser consent; Public API uses Bearer API key from workspace Developer settings (no OAuth).",
+  "access": "paid_plan",
+  "access_note": "MCP connects from a standard Otter account; REST Public API is available only to Enterprise workspaces (confirmed on Otter help center).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "api.otter.ai/v1: channels, conversations (list/get/ingest), audio links, workspace, webhooks; 10 req/s, 2 keys/user. MCP: search, fetch, get user info (read-only).",
+  "official_mcp": "yes",
+  "mcp_note": "https://mcp.otter.ai/mcp (OAuth, read-only, 3 tools).",
+  "verdict": "ready_with_gate",
+  "blocker": "enterprise_only",
+  "blocker_note": "Full REST API limited to Enterprise workspaces; MCP is read-only but works on regular accounts.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "quote": "All access is OAuth-authenticated with granular permissions."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "quote": "\"url\": \"https://mcp.otter.ai/mcp\""
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "quote": "We currently do not have a public API key at this time."
+   },
+   {
+    "field": "access",
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter's Public API is available for all Enterprise workspaces."
+   },
+   {
+    "field": "api_type",
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter.ai's Public API provides programmatic access to retrieve channels, conversations, transcripts, audio"
+   }
+  ],
+  "confidence": "high",
+  "changes": [
+   {
+    "field": "access_note",
+    "from": "MCP connects from a standard Otter account; REST Public API is Enterprise-workspace only (third-party Scalekit article, not confirmed on a vendor page).",
+    "to": "MCP connects from a standard Otter account; REST Public API is available only to Enterprise workspaces (confirmed on Otter help center).",
+    "reason": "Vendor help center confirms Enterprise-only gating; Scalekit source replaced",
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   {
+    "field": "confidence",
+    "from": "medium",
+    "to": "high",
+    "reason": "Gating now confirmed by vendor page",
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ },
+ {
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting recorder producing transcripts, summaries and action items.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "User-level API key from Settings; OAuth apps for partner/public integrations.",
+  "access": "self_serve",
+  "access_note": "Any user generates an API key in User Settings > API Access; key sees own and team-shared meetings. 60 calls/min per user. Plan gating not stated on pages read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "Meetings/recordings, transcript, summary, teams, team members, webhooks; SDKs available.",
+  "official_mcp": "yes",
+  "mcp_note": "https://api.fathom.ai/mcp (official, developers.fathom.ai/mcp-docs).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.fathom.ai/quickstart",
+    "quote": "API keys are scoped to the user who creates them."
+   },
+   {
+    "field": "access",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Anyone can browse the API docs and start building!"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.fathom.ai/quickstart",
+    "quote": "Head to the API Access section of your User Settings and generate an API key."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.fathom.ai/mcp-docs",
+    "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "users can make 60 calls per minute across all of their API keys"
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": ""
+ },
+ {
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI search engine answering questions from peer-reviewed research papers.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "REST uses x-api-key header; MCP uses OAuth 2.0 (or Bearer API key).",
+  "access": "self_serve",
+  "access_note": "Create free account, open API & MCP Dashboard, create key. Free plan includes 30 calls/month; paid plans raise limits.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "api.consensus.app paper search with citations and study takeaways; limited surface. Plan limits page not read.",
+  "official_mcp": "yes",
+  "mcp_note": "https://mcp.consensus.app/mcp (OAuth 2.0, dynamic discovery).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.consensus.app/api-get-started",
+    "quote": "x-api-key: YOUR_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.consensus.app/api-get-started",
+    "quote": "Every plan includes API access, and the Free plan includes 30 calls a month."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.consensus.app/api-get-started",
+    "quote": "https://api.consensus.app"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.consensus.app/consensus-mcp",
+    "quote": "Server URL https://mcp.consensus.app/mcp Authentication OAuth 2.0"
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.consensus.app/api-get-started",
+    "quote": "Create and copy an API key"
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": ""
+ },
+ {
+  "id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Document parsing and extraction API for PDFs and other files.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "auth_note": "API key sent as Bearer token; created in Studio or via reducto login.",
+  "access": "self_serve",
+  "access_note": "Register at studio.reducto.ai and create an API key; pay-as-you-go pricing; free credits mentioned on homepage (eligibility not verified).",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "platform.reducto.ai: parse, extract, split, jobs; CLI and SDKs.",
+  "official_mcp": "yes",
+  "mcp_note": "https://mcp.reducto.ai/mcp (Bearer API key) and uvx mcp-server-reducto.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "curl -X POST \"https://platform.reducto.ai/parse\" -H \"Authorization: Bearer $REDUCTO_API_KEY\""
+   },
+   {
+    "field": "access",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "create one in Studio under API Keys."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.reducto.ai/quickstart",
+    "quote": "https://platform.reducto.ai/parse"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.reducto.ai/mcp-server",
+    "quote": "\"url\": \"https://mcp.reducto.ai/mcp\""
+   },
+   {
+    "field": "verdict",
+    "url": "https://reducto.ai/pricing",
+    "quote": "$0.10 per session, pay as you go."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": ""
+ },
+ {
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Autonomous AI software engineer agent run through sessions.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "auth_note": "Service user API key (recommended) or personal access token as Bearer; org ID in URL.",
+  "access": "paid_plan",
+  "access_note": "Keys created in Devin org settings; a Free plan exists but whether API v3 is available on it was not confirmed on pages read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "api.devin.ai/v3/organizations/{org_id}: sessions, knowledge notes, etc.",
+  "official_mcp": "yes",
+  "mcp_note": "https://mcp.devin.ai/mcp (Bearer service user key, X-Org-Id for enterprise).",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Plan tier needed for API access unverified; sessions consume paid usage.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "Authorization: Bearer $DEVIN_API_KEY"
+   },
+   {
+    "field": "access",
+    "url": "https://devin.ai/pricing",
+    "quote": "Free, Pro, Max, Teams, and Enterprise plans available."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "\"serverUrl\": \"https://mcp.devin.ai/mcp\""
+   },
+   {
+    "field": "verdict",
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "quote": "For MCP usage, ensure you are using a service user API key (not a legacy key)."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [],
+  "verifier_status": "unresolved",
+  "verifier_note": "Devin self-serve plans page and API overview do not state whether API keys/service users are available on the Free plan; access=paid_plan left as-is."
+ },
+ {
+  "id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI image and video generation platform with 50+ models.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "Authorization: Key {key_id}:{key_secret} header.",
+  "access": "self_serve",
+  "access_note": "Create account, add payment method, top up balance, create API key. Pay-as-you-go USD, no subscription; no free tier mentioned. Website plan does not grant API access.",
+  "api_type": [
+   "rest",
+   "sdk_only",
+   "cli_only"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Async generation per model (image/video), status polling, webhooks; Python and TypeScript SDKs; separate CLI.",
+  "official_mcp": "yes",
+  "mcp_note": "Higgsfield MCP (higgsfield.ai/mcp) connects Claude to an existing account and spends plan credits; separate from API.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.higgsfield.ai/",
+    "quote": "Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}"
+   },
+   {
+    "field": "access",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "There is no subscription: you top up a balance, pay per generation at published rates"
+   },
+   {
+    "field": "api_type",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "call the REST API directly from any language with an HTTP client"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "Higgsfield MCP connects Claude to an existing Higgsfield account"
+   },
+   {
+    "field": "verdict",
+    "url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers"
+   }
+  ],
+  "confidence": "high",
+  "changes": [],
+  "verifier_status": "confirmed",
+  "verifier_note": ""
+ },
+ {
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Local CLI rendering Mermaid diagram definitions to SVG, PNG or PDF.",
+  "auth_methods": [
+   "none"
+  ],
+  "auth_note": "No auth; local npm/Docker tool.",
+  "access": "not_applicable",
+  "access_note": "Open-source MIT tool installed via npm or Docker; no hosted service or credentials.",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "none",
+  "api_note": "mmdc command plus a Node.js API (not covered by semver); needs headless Chromium.",
+  "official_mcp": "no",
+  "mcp_note": "No MCP for mermaid-cli itself; Mermaid Chart (the hosted commercial product) offers a remote MCP at https://mcp.mermaid.ai/mcp. Community: hustcc/mcp-mermaid.",
+  "verdict": "not_a_fit",
+  "blocker": "local_tool_only",
+  "blocker_note": "Local OSS CLI with no hosted API; would need a hosted wrapper.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "npm install -g @mermaid-js/mermaid-cli"
+   },
+   {
+    "field": "access",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid."
+   },
+   {
+    "field": "api_type",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It's possible to call mermaid-cli via a Node.JS API."
+   },
+   {
+    "field": "verdict",
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "mmdc -i input.mmd -o output.svg"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://mermaid.ai/docs/ai/mcp-server",
+    "quote": "\"url\": \"https://mcp.mermaid.ai/mcp\""
+   }
+  ],
+  "confidence": "high",
+  "changes": [
+   {
+    "field": "mcp_note",
+    "from": "None from the vendor.",
+    "to": "No MCP for mermaid-cli itself; Mermaid Chart (the hosted commercial product) offers a remote MCP at https://mcp.mermaid.ai/mcp. Community: hustcc/mcp-mermaid.",
+    "reason": "Replaced absence-only evidence; documented vendor's Mermaid Chart MCP",
+    "url": "https://mermaid.ai/docs/ai/mcp-server"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": "official_mcp kept 'no' for the CLI; Mermaid Chart's MCP (mcp.mermaid.ai) is a separate hosted product. Could be argued as 'yes' if scoped to Mermaid vendor."
+ },
+ {
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_liner": "TranscriptAPI: REST API returning YouTube video transcripts, search and channels.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "auth_note": "Authorization: Bearer sk_ key.",
+  "access": "self_serve",
+  "access_note": "Sign up for 100 free credits, no card (vendor blog); paid plans from $5/mo. Third-party service, not YouTube official.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "v2 youtube transcript endpoint plus search, channel and playlist endpoints.",
+  "official_mcp": "yes",
+  "mcp_note": "https://transcriptapi.com/mcp (vendor-hosted remote MCP).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://transcriptapi.com/",
+    "quote": "-H \"Authorization: Bearer API_KEY\""
+   },
+   {
+    "field": "api_type",
+    "url": "https://transcriptapi.com/",
+    "quote": "https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json"
+   },
+   {
+    "field": "verdict",
+    "url": "https://transcriptapi.com/blog/youtube-transcript-api-comparison",
+    "quote": "Free tier 100 credits, no card"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://transcriptapi.com/",
+    "quote": "\"url\": \"https://transcriptapi.com/mcp\""
+   },
+   {
+    "field": "access",
+    "url": "https://transcriptapi.com/",
+    "quote": "new accounts get 100 free credits, no card required, and one transcript costs one credit."
+   }
+  ],
+  "confidence": "medium",
+  "changes": [
+   {
+    "field": "mcp_note",
+    "from": "Vendor advertises native MCP and agent skills; exact URL not read.",
+    "to": "https://transcriptapi.com/mcp (vendor-hosted remote MCP).",
+    "reason": "MCP URL found on vendor homepage",
+    "url": "https://transcriptapi.com/"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ },
+ {
+  "id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting recorder with transcripts, highlights and CRM sync.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal Access Token, Workspace Access Token (admin, plan-gated), or OAuth2 code flow with PKCE.",
+  "access": "self_serve",
+  "access_note": "Personal Access Token from integrations page works on every plan, including Free. Workspace tokens need Business/Enterprise and admin.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "api_note": "api.grain.com/_/public-api/v2: recordings, transcripts, hooks, token-info.",
+  "official_mcp": "yes",
+  "mcp_note": "https://api.grain.com/_/mcp (personal-scope tokens or OAuth).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.grain.com/authentication.html",
+    "quote": "Personal Access Token (PAT) personal Generated manually from the integrations page."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.grain.com/",
+    "quote": "https://api.grain.com/_/public-api/v2/token-info"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.grain.com/authentication.html",
+    "quote": "authenticate the Grain MCP server at https://api.grain.com/_/mcp"
+   },
+   {
+    "field": "access",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Not for personal API access, which is available on every plan, including Free."
+   },
+   {
+    "field": "verdict",
+    "url": "https://grain.com/release-notes",
+    "quote": "Build on your Grain data from any plan."
+   }
+  ],
+  "confidence": "high",
+  "changes": [
+   {
+    "field": "access",
+    "from": "paid_plan",
+    "to": "self_serve",
+    "reason": "Vendor support: personal API access available on every plan, including Free",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   },
+   {
+    "field": "access_note",
+    "from": "Third-party source says PATs need Starter or above and Free plans get no API access; workspace scope not on all plans per vendor docs.",
+    "to": "Personal Access Token from integrations page works on every plan, including Free. Workspace tokens need Business/Enterprise and admin.",
+    "reason": "Scalekit claim (Free gets no API) contradicted by vendor page",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   },
+   {
+    "field": "verdict",
+    "from": "ready_with_gate",
+    "to": "ready",
+    "reason": "Self-serve PAT on Free plan",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   },
+   {
+    "field": "blocker",
+    "from": "paid_plan",
+    "to": "none",
+    "reason": "No plan gate for personal API",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   },
+   {
+    "field": "blocker_note",
+    "from": "API requires a paid plan (vendor pricing page not verified).",
+    "to": "",
+    "reason": "Verdict now ready",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   },
+   {
+    "field": "confidence",
+    "from": "medium",
+    "to": "high",
+    "reason": "Confirmed by vendor support page and release notes",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api"
+   }
+  ],
+  "verifier_status": "corrected",
+  "verifier_note": ""
+ }
+]

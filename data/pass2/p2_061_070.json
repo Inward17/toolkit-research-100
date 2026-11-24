@@ -1,0 +1,503 @@
+[
+ {
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Code hosting and collaboration platform with repos, issues, PRs and CI.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "jwt",
+   "basic"
+  ],
+  "auth_note": "PAT (fine-grained/classic), GitHub App tokens (JWT->installation token), OAuth app tokens, GITHUB_TOKEN; basic auth only for app client id/secret endpoints; username/password unsupported.",
+  "access": "self_serve",
+  "access_note": "Free GitHub account; create a personal access token or register a GitHub App/OAuth app in Developer settings. No approval needed.",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST API covers repos, issues, PRs, actions, orgs, etc.; GraphQL also offered (not re-verified on fetched page).",
+  "official_mcp": "yes",
+  "mcp_note": "github/github-mcp-server (local Docker, PAT) and a hosted remote server; GitHub-maintained.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN`"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "Authentication with username and password is not supported."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://github.com/github/github-mcp-server",
+    "quote": "GitHub's official MCP Server"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "curl --request GET --url \"https://api.github.com/octocat\""
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Frontend cloud platform for deploying and hosting web apps.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Vercel Access Token as Bearer; team scope via teamId query param. OAuth is used for integrations/MCP.",
+  "access": "self_serve",
+  "access_note": "Create an Access Token in account settings. Hobby free tier existence not confirmed on fetched pages.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Many endpoint groups: Projects 33, Domains, Deployments, Env, Teams, Sandboxes 28, Feature Flags 28, Marketplace 25, etc.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP at https://mcp.vercel.com (OAuth); blog says public beta at launch.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API."
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Create and manage Access Tokens in your account settings."
+   },
+   {
+    "field": "api_type",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "All endpoints live under the URL https://api.vercel.com and follow the REST architecture."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://vercel.com/docs/mcp",
+    "quote": "Vercel MCP is Vercel's official remote MCP server at `https://mcp.vercel.com`, and it authorizes clients with OAuth."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Web hosting and deployment platform with serverless functions and forms.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "auth_note": "Personal access token as Bearer for own use; OAuth2 required for public integrations.",
+  "access": "self_serve",
+  "access_note": "Generate a PAT under User settings > Applications; a Free plan exists (pricing page 'Everything in Free'). Credit-based plans; deploys consume credits.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Sites, deploys, files, env vars, forms/submissions, hooks, snippets, DNS; OpenAPI reference at open-api.netlify.com. Rate limit 500 req/min, 3 deploys/min.",
+  "official_mcp": "yes",
+  "mcp_note": "Official netlify/netlify-mcp; remote at https://mcp.netlify.com/mcp and local @netlify/mcp.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "quote": "Netlify uses OAuth2 for authentication."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "quote": "Authorization: Bearer <YOUR_PERSONAL_ACCESS_TOKEN>"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "quote": "If you’re making a public integration with Netlify for others to enjoy, you must use OAuth2."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "quote": "All URLs start with `https://api.netlify.com/api/v1/`."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://github.com/netlify/netlify-mcp",
+    "quote": "Netlify's Official MCP server"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 64,
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Global network offering CDN, DNS, security, Workers and zero-trust services.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Scoped API tokens (user or account-owned) as Bearer; legacy global API key exists (not re-verified); OAuth used by managed MCP.",
+  "access": "self_serve",
+  "access_note": "Any account can create an API token in dashboard. Some product endpoints depend on plan (not verified per product).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Single v4 API at api.cloudflare.com covering zones, DNS, Workers, R2, Access, etc.; hundreds of endpoints.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP at https://mcp.cloudflare.com/mcp plus catalog of managed servers (OAuth).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "quote": "curl \"https://api.cloudflare.com/client/v4/user/tokens/verify\" --header \"Authorization: Bearer <API_TOKEN>\""
+   },
+   {
+    "field": "access",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/",
+    "quote": "Go to Manage account > Account API tokens. Select Create Token and fill in the token name, permissions"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "quote": "https://api.cloudflare.com/client/v4/user/tokens/verify"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Open-source Postgres backend platform with auth, storage and realtime.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2",
+   "api_key"
+  ],
+  "auth_note": "Management API: personal access token (scoped or legacy) or OAuth2. Per-project Data API uses project API keys (anon/service role), not re-verified here.",
+  "access": "self_serve",
+  "access_note": "Create PAT at dashboard/account/tokens; OAuth2 apps for third parties. Free plan availability not verified on fetched pages.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Management API (projects, orgs, branches, secrets, etc.) plus per-project PostgREST/Auth/Storage APIs.",
+  "official_mcp": "yes",
+  "mcp_note": "Official supabase/mcp; hosted https://mcp.supabase.com/mcp (OAuth or PAT Bearer).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "PATs are tokens with a custom expiry that you manually generate to access the Management API."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user"
+   },
+   {
+    "field": "access",
+    "url": "https://supabase.com/docs/guides/platform/personal-access-tokens",
+    "quote": "Personal access tokens (PATs) authenticate you to the Management API"
+   },
+   {
+    "field": "api_type",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "curl https://api.supabase.com/v1/projects"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+    "quote": "The MCP server repository is available at github.com/supabase/mcp."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Graph database; Aura cloud has an Aura management API plus Bolt/HTTP query access.",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "auth_note": "Aura API: client ID/secret exchanged for bearer token (client_credentials). Database queries use username/password over Bolt/HTTP.",
+  "access": "self_serve",
+  "access_note": "Aura API credentials available to all tiers via console Client credentials page. Free Aura instance availability not verified.",
+  "api_type": [
+   "rest",
+   "other"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Aura API manages instances (create/delete/snapshots etc.); data access is via Cypher over Bolt/Query API, not a broad resource REST API.",
+  "official_mcp": "yes",
+  "mcp_note": "Official neo4j/mcp: local binary, stdio and http, tools for schema, read/write Cypher, GDS.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "All tiers can create Aura API credentials."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "curl --request POST 'https://api.neo4j.io/oauth/token' --user '<client_id>:<client_secret>'"
+   },
+   {
+    "field": "access",
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "All tiers can create Aura API credentials."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+    "quote": "The official MCP Server for Neo4j, is a local MCP server that is downloadable as a binary"
+   },
+   {
+    "field": "api_type",
+    "url": "https://neo4j.com/docs/mcp/current/",
+    "quote": "Neo4j MCP implements the Model Context Protocol (MCP)"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud data platform for warehousing, analytics and AI workloads.",
+  "auth_methods": [
+   "oauth2",
+   "jwt",
+   "bearer_token"
+  ],
+  "auth_note": "Key-pair JWT, OAuth, or programmatic access token (PAT), all sent as Bearer.",
+  "access": "free_trial",
+  "access_note": "30-day trial with $400 credits; after that requires a paid (usage-billed) account.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST APIs and SQL API for databases, warehouses, tables, Cortex, etc.; SQL API executes any SQL.",
+  "official_mcp": "yes",
+  "mcp_note": "Snowflake-managed MCP server (GA Nov 2025) exposing Cortex Analyst/Search/Agents and SQL as tools; per-account URL.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Free trial only; ongoing use needs paid account (usage billing).",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "quote": "Authorization: Bearer JWT"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+    "quote": "PROGRAMMATIC_ACCESS_TOKEN"
+   },
+   {
+    "field": "access",
+    "url": "https://signup.snowflake.com/",
+    "quote": "Start your 30-day trial with $400 in free credits"
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+    "quote": "authenticate to the following Snowflake endpoints: Snowflake REST APIs."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Managed MongoDB cloud database with an Atlas Administration API.",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "auth_note": "Service accounts (OAuth2 client credentials, recommended) or legacy API keys (HTTP Digest, public/private key). Cluster data access uses DB users via drivers.",
+  "access": "self_serve",
+  "access_note": "Atlas has a free tier cluster (not verified on fetched page); create service account or API key in org/project access settings.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Atlas Administration API: clusters, projects, users, backups, network, alerts. Does not include cluster data access.",
+  "official_mcp": "yes",
+  "mcp_note": "Official MongoDB MCP Server (mongodb-mcp-server) with Atlas service-account creds; also Atlas managed MCP.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "quote": "API keys are a legacy method of authenticating to the Atlas Administration API that uses HTTP Digest Authentication."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "quote": "Service accounts are the recommended method to manage authentication to the Atlas Administration API."
+   },
+   {
+    "field": "access",
+    "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+    "quote": "you must authenticate your API requests with one of the following authentication methods"
+   },
+   {
+    "field": "api_type",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "quote": "API keys only grant access to the Atlas Administration API, which does not include UI access or access to cluster data."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://www.mongodb.com/products/tools/mcp-server",
+    "quote": "The MongoDB MCP Server connects any MongoDB deployment"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Observability and security monitoring platform for metrics, logs and traces.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "auth_note": "API key plus application key sent as headers (DD-API-KEY, DD-APPLICATION-KEY); per-site base URL. OAuth for MCP.",
+  "access": "free_trial",
+  "access_note": "Free trial offered; API keys are created within an org; ongoing use requires paid plan (free tier not confirmed on fetched pages).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Large REST API: metrics, logs, monitors, dashboards, incidents, SLOs, security, users, etc.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Datadog MCP Server (remote) at https://mcp.datadoghq.com/v1/mcp; docs note it is under significant development and site-limited.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "Trial only; production use needs paid subscription.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "quote": "Application keys, in conjunction with your organization's API key, give users access to Datadog's programmatic API."
+   },
+   {
+    "field": "access",
+    "url": "https://www.datadoghq.com/free-datadog-trial/",
+    "quote": "Free Datadog Trial"
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.datadoghq.com/api/latest/authentication/",
+    "quote": "Manage your account's API and application keys in Datadog"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.datadoghq.com/mcp_server/",
+    "quote": "The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Application error tracking and performance monitoring platform.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Auth tokens (organization, personal, internal integration) as Bearer; OAuth2 for public integrations.",
+  "access": "self_serve",
+  "access_note": "Any user can create organization tokens in Settings > Developer Settings; free Developer plan existence not verified on fetched pages.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "REST API at sentry.io/api/0 covering orgs, projects, issues, events, releases, teams, etc.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Sentry MCP at https://mcp.sentry.dev/mcp (OAuth); open source getsentry/sentry-mcp.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth/",
+    "quote": "curl -H 'Authorization: Bearer {TOKEN}' https://sentry.io/api/0/organizations/{organization_slug}/projects/"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth/",
+    "quote": "OAuth2"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.sentry.io/account/auth-tokens/",
+    "quote": "Any user can create organization tokens for any of their organizations."
+   },
+   {
+    "field": "api_type",
+    "url": "https://docs.sentry.io/api/auth/",
+    "quote": "https://sentry.io/api/0/organizations/"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://docs.sentry.io/product/sentry-mcp/",
+    "quote": "claude mcp add --transport http sentry https://mcp.sentry.dev/mcp"
+   }
+  ],
+  "confidence": "high"
+ }
+]

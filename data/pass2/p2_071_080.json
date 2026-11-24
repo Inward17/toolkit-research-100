@@ -1,0 +1,511 @@
+[
+ {
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "Workspace for docs, wikis, databases and project tracking.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Internal connection token or personal access token (static Bearer); OAuth for public/OAuth integrations.",
+  "access": "self_serve",
+  "access_note": "Create an internal connection or personal access token in the Notion developer portal; works on all plans, rate-limited (180 req/min).",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Pages, databases/data sources, blocks, users, comments, search, file uploads. Endpoint count not stated on pages read.",
+  "official_mcp": "yes",
+  "mcp_note": "Hosted official MCP at https://mcp.notion.com/mcp (OAuth); also open-source makenotion/notion-mcp-server.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+    "quote": "Choose a personal access token, internal connection, OAuth integration, or public integration based on who will use your app"
+   },
+   {
+    "field": "access",
+    "url": "https://developers.notion.com/guides/notion-api/quick-start",
+    "quote": "Step 1: Get a personal access token"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.notion.com/guides/connections-and-tokens/internal-connections",
+    "quote": "GET /v1/pages/b55c9c91-384d-452b-81db-d1ef79372b75 HTTP/1.1 Authorization: Bearer {INTEGRATION_TOKEN}"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+    "quote": "Notion MCP (https://mcp.notion.com/mcp) is our hosted, actively maintained server."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.notion.com/reference/request-limits",
+    "quote": "All other plans | 180 requests per minute (an average of 3 per second)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_liner": "Low-code database and app platform for collaborative workflows.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access tokens (Bearer) for own use; OAuth access tokens for third-party integrations. Legacy API keys removed Feb 2024.",
+  "access": "self_serve",
+  "access_note": "Create a PAT at airtable.com/create/tokens or register an OAuth integration; free plan limited to 1,000 API calls/workspace/month.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Records CRUD, bases/tables/fields metadata, webhooks, comments, collaborators; 5 req/s per base.",
+  "official_mcp": "yes",
+  "mcp_note": "Hosted official MCP at https://mcp.airtable.com/mcp (OAuth), available on all plans.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process."
+   },
+   {
+    "field": "access",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "quote": "Free plan - 1000 calls per workspace per month"
+   },
+   {
+    "field": "api_type",
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "curl https://api.airtable.com/v0/YOUR_BASE_ID/YOUR_TABLE_ID_OR_NAME -H \"Authorization: Bearer YOUR_TOKEN\""
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://airtable.com/developers/agents/mcp/getting-started",
+    "quote": "The server is available to all users on all plans."
+   },
+   {
+    "field": "verdict",
+    "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+    "quote": "Airtable enforces a rate limit of 5 requests per second (per base)"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Issue tracking and project management tool for software teams.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal API keys (admins/permitted members) or OAuth2 (authorization code with PKCE; client_credentials for app actor).",
+  "access": "self_serve",
+  "access_note": "Create a personal API key in Settings > Account > Security & Access, or create an OAuth2 app in workspace settings; no approval step found.",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "GraphQL API covering issues, projects, cycles, teams, comments, initiatives, customers, webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official remote MCP at https://mcp.linear.app/mcp (OAuth).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://linear.app/developers",
+    "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API"
+   },
+   {
+    "field": "access",
+    "url": "https://linear.app/docs/api-and-webhooks",
+    "quote": "Admins and permitted Members can create personal API keys from Settings > Account > Security & Access."
+   },
+   {
+    "field": "api_type",
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "quote": "Once you have obtained a valid access token, you can make a request to Linear's GraphQL API."
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://linear.app/docs/mcp",
+    "quote": "claude mcp add --transport http linear-server https://mcp.linear.app/mcp"
+   },
+   {
+    "field": "verdict",
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "quote": "Linear supports OAuth2 authentication, which is recommended if you're building applications to integrate with Linear."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "one_liner": "Atlassian issue and project tracking for software and business teams.",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "auth_note": "Jira Cloud: email + API token via Basic auth, or OAuth 2.0 (3LO); Forge/Connect for apps.",
+  "access": "self_serve",
+  "access_note": "Sign up for a Jira Cloud site and create an API token (account settings) or register a 3LO app in developer console; free-plan availability not verified on pages read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Jira Cloud platform REST API v2/v3: issues, projects, search/JQL, users, workflows, fields, webhooks; endpoint count not read.",
+  "official_mcp": "yes",
+  "mcp_note": "Atlassian Rovo remote MCP server (atlassian/atlassian-mcp-server) covers Jira, Confluence, JSM.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+    "quote": "-u fred@example.com:freds_api_token -X GET https://your-domain.atlassian.net/rest/api/2/issue/createmeta"
+   },
+   {
+    "field": "access",
+    "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+    "quote": "Select Create API token with scopes. Give your API token a name that describes its purpose."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "quote": "Jira Cloud Platform REST API v3"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+    "quote": "Summarize and search Jira, Jira Service Management, Confluence, Bitbucket, Projects, Goals, and more without switching tools."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/",
+    "quote": "For simple scripts or to make REST API calls yourself, see Basic auth for REST APIs."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work management platform for tasks, projects and team goals.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access token (Bearer) or OAuth 2.0 with PKCE; service accounts are Enterprise-tier.",
+  "access": "self_serve",
+  "access_note": "Generate a PAT in the Asana developer console or register an OAuth app; free domains get 150 req/min.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Tasks, projects, sections, workspaces, users, teams, portfolios, goals, webhooks, custom fields, etc.",
+  "official_mcp": "yes",
+  "mcp_note": "Official Asana MCP server (https://mcp.asana.com/v2/mcp), V2 documented; V1 beta also documented.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "Service accounts need Enterprise; not required for PAT/OAuth use.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs/authentication",
+    "quote": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.asana.com/docs/rate-limits",
+    "quote": "Domain type | Maximum requests per minute | Free | 150"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "curl https://app.asana.com/api/1.0/users/me -H \"Authorization: Bearer ACCESS_TOKEN\""
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+    "quote": "Asana offers a Model Context Protocol (MCP) server that allows AI assistants and other applications to access the Asana Work Graph."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developers.asana.com/docs/authentication",
+    "quote": "Service Accounts (SAs) are long-lived tokens that provide programmatic access to the API. Service Accounts are an Enterprise tier feature"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work operating system for boards, projects and workflows.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal V2 API token (Authorization header) or OAuth for apps; MCP uses OAuth 2.1.",
+  "access": "self_serve",
+  "access_note": "Free developer/sandbox account available; API is a free feature across all plans with daily call limits; personal token from Administration > Connections or profile.",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "api_note": "GraphQL API v2: boards, items, columns, groups, users, workspaces, docs, updates, webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official hosted MCP at https://mcp.monday.com/mcp (OAuth or Bearer API token).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+    "quote": "A developer account (also called a sandbox account) is a free monday.com account designed for building and testing monday apps and API integrations."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "quote": "curl -X POST https://api.monday.com/v2 -H \"Authorization: xxxx\" -d '{\"query\": \"query { me { id name } }\"}'"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+    "quote": "\"url\": \"https://mcp.monday.com/mcp\", \"headers\": {\"Authorization\": \"Bearer YOUR_API_TOKEN\"}"
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+    "quote": "maintains the API service as a free feature across all plans"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_liner": "All-in-one productivity and project management platform.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "auth_note": "Personal API token in Authorization header; OAuth flow for apps built for others.",
+  "access": "self_serve",
+  "access_note": "Any ClickUp account can generate a personal token; OAuth app creation in ClickUp settings. Plan-based rate limits not read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "API v2: tasks, lists, folders, spaces, comments, time tracking, goals, webhooks, custom fields, docs.",
+  "official_mcp": "yes",
+  "mcp_note": "Official MCP server at https://mcp.clickup.com/mcp.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.clickup.com/docs/authentication",
+    "quote": "For personal use, authenticate with your personal API token."
+   },
+   {
+    "field": "access",
+    "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+    "quote": "Anyone with a ClickUp account can generate a personal token."
+   },
+   {
+    "field": "api_type",
+    "url": "https://developer.clickup.com/reference/getaccesstoken",
+    "quote": "curl --request POST --url https://api.clickup.com/api/v2/oauth/token"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "Our MCP server URL is https://mcp.clickup.com/mcp."
+   },
+   {
+    "field": "verdict",
+    "url": "https://developer.clickup.com/docs/authentication",
+    "quote": "Build Apps for others - OAuth Flow"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "Collaborative docs with tables and automations; now branded Superhuman Docs.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "auth_note": "API token generated in account settings (Bearer), scoped to specific docs or all content; tokens expire with notification.",
+  "access": "self_serve",
+  "access_note": "Generate a token at docs.superhuman.com/account under API connections; plan restrictions on API not stated on pages read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "moderate",
+  "api_note": "Coda API v1 (docs, tables, rows, formulas, controls, pages); exact endpoint count not verified. Plugins SDK separate.",
+  "official_mcp": "yes",
+  "mcp_note": "Superhuman Docs runs an official MCP server (see Coda guide and Superhuman help article); community coda-mcp also exists.",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "Rebrand to Superhuman Docs; plan limits on API unverified.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+    "quote": "A token is tied to your account, so it can never do more than you can in Docs."
+   },
+   {
+    "field": "access",
+    "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+    "quote": "Go to docs.superhuman.com/account. Scroll down to the API connections section"
+   },
+   {
+    "field": "api_type",
+    "url": "https://coda.io/packs/build/latest/guides/basics/authentication/",
+    "quote": "type: sdk.AuthenticationType.CodaApiHeaderBearerToken"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+    "quote": "Superhuman Docs runs an MCP server built on the open Model Context Protocol standard"
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+    "quote": "Choose what your token can access. All content is selected by default."
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "Spreadsheet-style work management and project collaboration platform.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "API access token (Bearer) or OAuth 2.0.",
+  "access": "paid_plan",
+  "access_note": "API restricted to Business and Enterprise plans; no free tier or sandbox found on pages read.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "Sheets, rows, columns, workspaces, folders, users, reports, sights, attachments, webhooks.",
+  "official_mcp": "yes",
+  "mcp_note": "Official MCP server at https://mcp.smartsheet.com (US; .eu/.au regions); requires Business, Enterprise or Advanced Work Management.",
+  "verdict": "ready_with_gate",
+  "blocker": "paid_plan",
+  "blocker_note": "API and MCP need Business/Enterprise/Advanced Work Management plan.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.smartsheet.com/api/smartsheet/openapi/serverinfo",
+    "quote": "The Smartsheet API utilizes OAuth 2.0 for authentication and authorization."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+    "quote": "The Smartsheet API is restricted to users on Business and Enterprise plans"
+   },
+   {
+    "field": "api_type",
+    "url": "https://developers.smartsheet.com/api/smartsheet/openapi/users",
+    "quote": "https://api.smartsheet.com/2.0/"
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "quote": "Required plan: Business, Enterprise, or Advanced Work Management"
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+    "quote": "A Smarsheet API access token allows you to access and manage your organization's Smartsheet plan and data via the Smartsheet API."
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Time tracking, expenses and invoicing software.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "auth_note": "Personal access token from Harvest ID developers page plus Harvest-Account-Id header; OAuth2 for apps.",
+  "access": "self_serve",
+  "access_note": "API included for all accounts including free and trial; create PAT at id.getharvest.com/developers.",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "api_note": "API v2: time entries, projects, clients, tasks, users, invoices, estimates, expenses, reports.",
+  "official_mcp": "yes",
+  "mcp_note": "Harvest MCP documented by Harvest support at https://api.harvestapp.com/mcp (new; one aggregator page claimed none exists).",
+  "verdict": "ready",
+  "blocker": "none",
+  "blocker_note": "Official MCP page is a support article; low-detail excerpt only.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API."
+   },
+   {
+    "field": "access",
+    "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "Your Harvest subscription includes API access for all accounts (including free and trial accounts)"
+   },
+   {
+    "field": "api_type",
+    "url": "https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/",
+    "quote": "curl https://api.harvestapp.com/v2/invoices -H \"Authorization: Bearer $ACCESS_TOKEN\""
+   },
+   {
+    "field": "official_mcp",
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "quote": "\"harvest\": { \"url\": \"https://api.harvestapp.com/mcp\" }"
+   },
+   {
+    "field": "verdict",
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "OAuth2 authorization flow"
+   }
+  ],
+  "confidence": "medium"
+ }
+]

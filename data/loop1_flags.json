@@ -1,0 +1,422 @@
+{
+ "1": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/signup",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "api_type",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "verdict",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+   "result": "dead_link",
+   "status": 403
+  }
+ ],
+ "7": [
+  {
+   "field": "api_type",
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "24": [
+  {
+   "field": "auth_methods",
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "44": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "api_type",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "verdict",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "result": "dead_link",
+   "status": 403
+  }
+ ],
+ "48": [
+  {
+   "field": "access",
+   "url": "https://gumroad.com/api",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://gumroad.com/api",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "49": [
+  {
+   "field": "auth_methods",
+   "url": "https://advertising.amazon.com/API/docs/en-us/knowledge-hub/blogs/usage-examples/2024-11-sp-and-ads-bp",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "50": [
+  {
+   "field": "auth_methods",
+   "url": "https://commasdocs.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://commasdocs.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://commasdocs.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://commasdocs.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://commasdocs.com/",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "55": [
+  {
+   "field": "official_mcp",
+   "url": "https://mcp.apify.com/",
+   "result": "dead_link",
+   "status": 401
+  }
+ ],
+ "67": [
+  {
+   "field": "access",
+   "url": "https://signup.snowflake.com/",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "72": [
+  {
+   "field": "auth_methods",
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "78": [
+  {
+   "field": "api_type",
+   "url": "https://coda.io/packs/build/latest/guides/basics/authentication/",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "79": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/serverinfo",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/users",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "83": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/general-info",
+   "result": "js_page",
+   "status": 202
+  },
+  {
+   "field": "access",
+   "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+   "result": "js_page",
+   "status": 202
+  },
+  {
+   "field": "api_type",
+   "url": "https://developers.binance.com/en/docs/products/spot/web-socket-api",
+   "result": "js_page",
+   "status": 202
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+   "result": "js_page",
+   "status": 202
+  },
+  {
+   "field": "verdict",
+   "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+   "result": "js_page",
+   "status": 202
+  }
+ ],
+ "84": [
+  {
+   "field": "access",
+   "url": "https://www.pay-gent.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://www.pay-gent.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://www.pay-gent.com/",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://www.pay-gent.com/",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "85": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.ipayx.ai/developers",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://www.ipayx.ai/developers",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://www.ipayx.ai/developers",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://www.ipayx.ai/developers",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://www.ipayx.ai/?lang=en",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "86": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://help.developer.intuit.com/s/question/0D5TR00000fHVqB0AW/will-i-need-to-prepare-for-an-app-review-to-get-production-keys-for-a-private-app",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "87": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+   "result": "js_page",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+   "result": "js_page",
+   "status": 200
+  }
+ ],
+ "89": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "result": "quote_not_found",
+   "status": 200
+  },
+  {
+   "field": "access",
+   "url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "result": "quote_not_found",
+   "status": 200
+  },
+  {
+   "field": "api_type",
+   "url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "result": "quote_not_found",
+   "status": 200
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+   "result": "quote_not_found",
+   "status": 200
+  },
+  {
+   "field": "verdict",
+   "url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "result": "quote_not_found",
+   "status": 200
+  }
+ ],
+ "90": [
+  {
+   "field": "api_type",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "official_mcp",
+   "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "result": "dead_link",
+   "status": 403
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "result": "dead_link",
+   "status": 403
+  }
+ ],
+ "91": [
+  {
+   "field": "official_mcp",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "result": "quote_not_found",
+   "status": 200
+  }
+ ],
+ "98": [
+  {
+   "field": "official_mcp",
+   "url": "https://github.com/mermaid-js/mermaid-cli",
+   "result": "quote_not_found",
+   "status": 200
+  }
+ ]
+}

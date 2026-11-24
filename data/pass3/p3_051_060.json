@@ -1,0 +1,601 @@
+[
+  {
+    "id": 51,
+    "app": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Pay-as-you-go SEO data APIs: SERP, keywords, backlinks, on-page, business data.",
+    "auth_methods": [
+      "basic"
+    ],
+    "auth_note": "HTTP Basic with API login and auto-generated API password (not account password), in Authorization header.",
+    "access": "self_serve",
+    "access_note": "Register free, get API login/password in dashboard; $1 trial credit, then $50 minimum top-up.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "broad",
+    "api_note": "SERP, AI Optimization, Keyword Data, On-Page, Labs, Backlinks, Business Data, Domain Analytics APIs.",
+    "official_mcp": "yes",
+    "mcp_note": "Official: https://mcp.dataforseo.com/v3/mcp (Basic auth) and npm dataforseo-mcp-server.",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "none",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.dataforseo.com/v3/auth/",
+        "quote": "Basic authentication is the only way to access DataForSEO API"
+      },
+      {
+        "field": "access",
+        "url": "https://dataforseo.com/pricing",
+        "quote": "You can sign up for free and use your $1 trial credit available to new accounts"
+      },
+      {
+        "field": "api_type",
+        "url": "https://dataforseo.com/model-context-protocol",
+        "quote": "SERP API Get real-time Google, Bing, and Yahoo SERPs for any location and language."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://dataforseo.com/model-context-protocol",
+        "quote": "\"url\": \"https://mcp.dataforseo.com/v3/mcp\""
+      },
+      {
+        "field": "verdict",
+        "url": "https://dataforseo.com/pricing",
+        "quote": "The minimum account top-up is $50."
+      }
+    ],
+    "confidence": "high",
+    "changes": [],
+    "verifier_status": "confirmed",
+    "verifier_note": "Evidence and access/verdict/MCP rechecked; no change"
+  },
+  {
+    "id": 52,
+    "app": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "SEO platform with keyword, backlink, audit and rank-tracking APIs.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_note": "API key as 'Authorization: Token KEY' header (or apikey query param).",
+    "access": "free_trial",
+    "access_note": "API included with any paid plan (Core $129/mo); testable in free trial; or pay-as-you-go from $50 deposit / API add-on $149/mo.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "broad",
+    "api_note": "Data API (keyword research, backlinks, domain analysis, SERP, audit, AI visibility) plus Project API (rank tracking, projects).",
+    "official_mcp": "yes",
+    "mcp_note": "Official: https://api.seranking.com/mcp; sign-in or API key via X-Api-Key header.",
+    "verdict": "ready_with_gate",
+    "blocker": "paid_plan",
+    "blocker_note": "Credentials need trial then paid plan or $50 pay-as-you-go deposit.",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://seranking.com/api/data/getting-started/",
+        "quote": "Include an `Authorization` header in your request, with the value `Token YOUR_API_KEY`."
+      },
+      {
+        "field": "access",
+        "url": "https://seranking.com/api.html",
+        "quote": "API access comes with any SE Ranking plan (Core at $129/mo and Growth at $279/mo). You can even test it in the free trial"
+      },
+      {
+        "field": "api_type",
+        "url": "https://seranking.com/api.html",
+        "quote": "All data is returned as structured JSON."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://seranking.com/api/integrations/mcp/",
+        "quote": "codex mcp add se-ranking --url https://api.seranking.com/mcp"
+      },
+      {
+        "field": "verdict",
+        "url": "https://seranking.com/api.html",
+        "quote": "Pay-as-you-go is also available with a $50 minimum deposit."
+      }
+    ],
+    "confidence": "high",
+    "changes": [],
+    "verifier_status": "confirmed",
+    "verifier_note": "Evidence and access/verdict/MCP rechecked; no change"
+  },
+  {
+    "id": 53,
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "SEO suite exposing backlink, keyword, rank and brand-visibility data via API v3.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "auth_note": "API key for API v3; MCP uses OAuth consent; Ahrefs Connect program offers OAuth 2.0 for partner integrations.",
+    "access": "paid_plan",
+    "access_note": "API v3 and MCP available on Lite plan ($129/mo) and higher with monthly API units (200K Lite to custom Enterprise); no free plan.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "broad",
+    "api_note": "Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar endpoints; OpenAPI spec published.",
+    "official_mcp": "yes",
+    "mcp_note": "Hosted: https://api.ahrefs.com/mcp/mcp, requires Lite plan or higher.",
+    "verdict": "ready_with_gate",
+    "blocker": "paid_plan",
+    "blocker_note": "No free tier; API needs eligible paid plan (Enterprise implied by 'without an Enterprise plan' wording), 60 req/min default.",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+        "quote": "To send requests to Ahrefs API, you'll need an API key."
+      },
+      {
+        "field": "api_type",
+        "url": "https://docs.ahrefs.com/",
+        "quote": "GEThttps://api.ahrefs.com/v3/site-explorer/refdomains"
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+        "quote": "The remote MCP server is available on paid plans starting from Lite."
+      },
+      {
+        "field": "verdict",
+        "url": "https://docs.ahrefs.com/en/api/docs/free-test-queries",
+        "quote": "Users on any paid plan can test Ahrefs API by running a limited set of free test queries."
+      },
+      {
+        "field": "access",
+        "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+        "quote": "Using API v3 from any of the above methods is possible for Lite and higher subscription plans"
+      }
+    ],
+    "confidence": "high",
+    "changes": [
+      {
+        "field": "access_note",
+        "from": "API v3 only on eligible paid plans (docs hint Enterprise); free test queries on ahrefs/yep/firehose targets for paid users; API units are metered.",
+        "to": "API v3 and MCP available on Lite plan ($129/mo) and higher with monthly API units (200K Lite to custom Enterprise); no free plan.",
+        "reason": "Help center says API v3 usable on Lite and higher, not Enterprise-only",
+        "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+      },
+      {
+        "field": "confidence",
+        "from": "medium",
+        "to": "high",
+        "reason": "First-party plan table settles access",
+        "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+      }
+    ],
+    "verifier_status": "corrected",
+    "verifier_note": "access_note; confidence updated"
+  },
+  {
+    "id": 54,
+    "app": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "AI web scraping platform with scraper API, web search and workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_note": "API token in x-api-token header; MCP uses OAuth 2.1 with API key bearer fallback.",
+    "access": "self_serve",
+    "access_note": "Free plan with 100 tokens/month, no credit card; create API token at app.mrscraper.com/api-tokens.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "moderate",
+    "api_note": "Scraper API (HTML, Markdown, screenshot, brand, JSON), Web Search, Platform API for workflow rerun/management.",
+    "official_mcp": "yes",
+    "mcp_note": "Official: https://mcp.mrscraper.com/mcp (tools scrapeHtml, scrapeMarkdown, getScreenshot, scrapeBrand, scrapeJson, webSearch, status).",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "none",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "quote": "API token passed in the x-api-token header."
+      },
+      {
+        "field": "access",
+        "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+        "quote": "The Free plan includes 100 tokens per month with no credit card required."
+      },
+      {
+        "field": "api_type",
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "quote": "Scrape HTML, Markdown, screenshots, brand data, and JSON from a single Scraper API endpoint."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "quote": "add a server named mrscraper at exactly https://mcp.mrscraper.com/mcp"
+      },
+      {
+        "field": "verdict",
+        "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+        "quote": "The Free plan includes 100 tokens per month with no credit card required."
+      }
+    ],
+    "confidence": "high",
+    "changes": [],
+    "verifier_status": "confirmed",
+    "verifier_note": "Evidence and access/verdict/MCP rechecked; no change"
+  },
+  {
+    "id": 55,
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Cloud platform to run web-scraping Actors and fetch datasets.",
+    "auth_methods": [
+      "bearer_token",
+      "api_key"
+    ],
+    "auth_note": "API token as Bearer header (recommended) or ?token= query param; MCP also supports OAuth.",
+    "access": "self_serve",
+    "access_note": "Free plan includes $5 monthly platform usage; token created in Console Integrations page.",
+    "api_type": [
+      "rest",
+      "sdk_only"
+    ],
+    "api_breadth": "broad",
+    "api_note": "REST v2: Actors, runs, tasks, datasets, key-value stores, request queues, builds, schedules; OpenAPI spec; JS/Python clients.",
+    "official_mcp": "yes",
+    "mcp_note": "Official: https://mcp.apify.com (OAuth or API token); github.com/apify/apify-mcp-server.",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "none",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.apify.com/api/v2",
+        "quote": "Add the token to your request's `Authorization` header as `Bearer <token>`."
+      },
+      {
+        "field": "access",
+        "url": "https://github.com/apify/apify-mcp-server/blob/master/README.md",
+        "quote": "the free plan includes $5 of monthly platform usage."
+      },
+      {
+        "field": "api_type",
+        "url": "https://docs.apify.com/api/v2",
+        "quote": "The Apify API (version 2) provides programmatic access to the Apify platform."
+      },
+      {
+        "field": "verdict",
+        "url": "https://apify.com/pricing",
+        "quote": "Free. $0. $5 to spend in Apify Store or on your own Actors."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://docs.apify.com/platform/integrations/mcp",
+        "quote": "Add `https://mcp.apify.com` to your MCP client. On first connection, your browser opens so you can sign in to Apify and approve access."
+      }
+    ],
+    "confidence": "high",
+    "changes": [
+      {
+        "field": "evidence",
+        "from": "https://mcp.apify.com/ (401)",
+        "to": "https://docs.apify.com/platform/integrations/mcp",
+        "reason": "dead_link replaced with official docs page",
+        "url": "https://docs.apify.com/platform/integrations/mcp"
+      }
+    ],
+    "verifier_status": "corrected",
+    "verifier_note": "evidence updated"
+  },
+  {
+    "id": 56,
+    "app": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Web scraping, crawling, search and extraction API for LLMs.",
+    "auth_methods": [
+      "bearer_token",
+      "oauth2"
+    ],
+    "auth_note": "API key (fc-...) as Bearer; hosted MCP also supports OAuth sign-in and keyless access.",
+    "access": "self_serve",
+    "access_note": "Free plan: 1,000 credits/month, no card; key from dashboard.",
+    "api_type": [
+      "rest",
+      "sdk_only"
+    ],
+    "api_breadth": "moderate",
+    "api_note": "Scrape, crawl, map, search, extract/agent and interact endpoints; async jobs; SDKs.",
+    "official_mcp": "yes",
+    "mcp_note": "Official: https://mcp.firecrawl.dev/v2/mcp (API key) and /v2/mcp-oauth; github.com/firecrawl/firecrawl-mcp-server.",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "none (Bearer header detail backed by third-party blog only, hence medium confidence).",
+    "evidence": [
+      {
+        "field": "access",
+        "url": "https://www.firecrawl.dev/pricing",
+        "quote": "No cost, no card, no hassle. 1,000 credits / month $0 /month."
+      },
+      {
+        "field": "api_type",
+        "url": "https://docs.firecrawl.dev/use-cases/developers-mcp",
+        "quote": "Search, scrape, and interact with the web from Claude Desktop, Cursor, and other MCP clients"
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "quote": "\"url\": \"https://mcp.firecrawl.dev/v2/mcp-oauth\""
+      },
+      {
+        "field": "verdict",
+        "url": "https://www.firecrawl.dev/pricing",
+        "quote": "No cost, no card, no hassle. 1,000 credits / month $0 /month."
+      },
+      {
+        "field": "auth_methods",
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "quote": "The header should contain `Bearer fc-123456789`, where `fc-123456789` represents your API Key."
+      }
+    ],
+    "confidence": "medium",
+    "changes": [
+      {
+        "field": "evidence",
+        "from": "activepieces.com blog",
+        "to": "https://docs.firecrawl.dev/api-reference/introduction",
+        "reason": "replaced third-party auth evidence with official docs",
+        "url": "https://docs.firecrawl.dev/api-reference/introduction"
+      }
+    ],
+    "verifier_status": "corrected",
+    "verifier_note": "evidence updated"
+  },
+  {
+    "id": 57,
+    "app": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Proxy network plus web scraper, SERP and unlocker APIs.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "auth_note": "API key as Bearer token; default key created at account signup. Proxy zones use separate credentials.",
+    "access": "self_serve",
+    "access_note": "Create account to get default API key; MCP free tier 5K requests/month; scraper APIs are pay-per-use.",
+    "api_type": [
+      "rest",
+      "sdk_only",
+      "cli_only"
+    ],
+    "api_breadth": "broad",
+    "api_note": "Web Scraper API (1000+ ready scrapers), SERP API, Web Unlocker, Browser API, datasets, account management; CLI and JS/Python SDKs.",
+    "official_mcp": "yes",
+    "mcp_note": "Official: github.com/brightdata/brightdata-mcp; free tier 5,000 requests/month.",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "none (beyond free tiers usage is paid; billing verification not confirmed on pages read).",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_total_balance_through_API",
+        "quote": "--header 'Authorization: Bearer <token>'"
+      },
+      {
+        "field": "access",
+        "url": "https://docs.brightdata.com/api-reference/authentication",
+        "quote": "We create a default key for you upon account creation automatically."
+      },
+      {
+        "field": "api_type",
+        "url": "https://brightdata.com/products/web-scraper",
+        "quote": "Web Scraper API to seamlessly scrape web data. No-code interface for rapid development, no proxy management needed. 1000+ ready-made scrapers."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://github.com/brightdata/brightdata-mcp",
+        "quote": "Free tier: 5,000 requests per month."
+      },
+      {
+        "field": "verdict",
+        "url": "https://brightdata.com/pricing/mcp-server",
+        "quote": "Bright Data provides a free tier of 5K requests/month to new MCP users."
+      }
+    ],
+    "confidence": "medium",
+    "changes": [],
+    "verifier_status": "confirmed",
+    "verifier_note": "Evidence and access/verdict/MCP rechecked; no change"
+  },
+  {
+    "id": 58,
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "Open-source CLI that hunts usernames across social networks.",
+    "auth_methods": [
+      "none"
+    ],
+    "auth_note": "No auth; local Python CLI, no vendor account or hosted API.",
+    "access": "not_applicable",
+    "access_note": "pipx/docker install and run locally; MIT license.",
+    "api_type": [
+      "cli_only"
+    ],
+    "api_breadth": "none",
+    "api_note": "No REST API; CLI checking 400+ sites by username.",
+    "official_mcp": "no",
+    "mcp_note": "No official MCP; community Sherlock MCP server exists (github.com/Burnsedia/sherlock-mcp).",
+    "verdict": "not_a_fit",
+    "blocker": "local_tool_only",
+    "blocker_note": "OSS CLI; toolkit would need a hosted wrapper. Also ethically sensitive username lookup.",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "Hunt down social media accounts by username across 400+ social networks"
+      },
+      {
+        "field": "access",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "pipx install sherlock-project"
+      },
+      {
+        "field": "api_type",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "docker run -it --rm sherlock/sherlock"
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "MIT © Sherlock Project"
+      },
+      {
+        "field": "verdict",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "Sherlock: Find Usernames Across Social Networks (Version 0.16.0)"
+      }
+    ],
+    "confidence": "high",
+    "changes": [
+      {
+        "field": "mcp_note",
+        "from": "No official MCP found on the project page.",
+        "to": "No official MCP; community Sherlock MCP server exists (github.com/Burnsedia/sherlock-mcp).",
+        "reason": "Search found community MCP wrapper",
+        "url": "https://github.com/Burnsedia/sherlock-mcp"
+      }
+    ],
+    "verifier_status": "corrected",
+    "verifier_note": "mcp_note updated"
+  },
+  {
+    "id": 59,
+    "app": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "B2B contact and company enrichment API aggregating 30+ data vendors.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "auth_note": "API key in header (docs say x-api-key; marketing example shows x-waterfall-api-key); master key can create sub-keys.",
+    "access": "partner_gated",
+    "access_note": "Pricing page says talk to founders/book a call; free benchmark on your data; no self-serve signup or free tier found.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "moderate",
+    "api_note": "Prospector, contact/company enrichment, email verification, job-change endpoints, API key management.",
+    "official_mcp": "no",
+    "mcp_note": "No MCP found on pages read.",
+    "verdict": "ready_with_gate",
+    "blocker": "partner_approval",
+    "blocker_note": "Contract/sales-led onboarding; self-serve key issuance not documented.",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "quote": "Send your API key in the x-api-key header."
+      },
+      {
+        "field": "access",
+        "url": "https://www.waterfall.io/pricing",
+        "quote": "Commitments and minimums are set at contract and depend on volume and term"
+      },
+      {
+        "field": "api_type",
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "quote": "The Waterfall API is available at https://api.waterfall.io."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "quote": "API Key Management"
+      },
+      {
+        "field": "verdict",
+        "url": "https://www.waterfall.io/pricing",
+        "quote": "Talk to our team (most likely one of the founders) to share your use case"
+      }
+    ],
+    "confidence": "medium",
+    "changes": [],
+    "verifier_status": "confirmed",
+    "verifier_note": "Confirmed: no public rate card, contract-based; no official MCP. Verdict ready_with_gate kept though partner_gated could arguably be 'blocked'."
+  },
+  {
+    "id": 60,
+    "app": "Clay",
+    "category": "Data, SEO and Scraping",
+    "one_liner": "GTM data enrichment and outbound workflow platform with waterfall enrichment.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "auth_note": "Public API uses clay-api-key header; hosted MCP uses OAuth with dynamic client registration.",
+    "access": "self_serve",
+    "access_note": "Developer platform/API on all plans incl. free; free plan capped at 100 search results/30 days and uses credits; table query/sync is Enterprise; key via 'clay api-keys create'.",
+    "api_type": [
+      "rest"
+    ],
+    "api_breadth": "narrow",
+    "api_note": "Public API v0 (~12 endpoints): filter search, routine/function runs, batch via JSONL, task results, webhooks, Enterprise table query.",
+    "official_mcp": "yes",
+    "mcp_note": "Hosted Clay MCP: https://api.clay.com/v3/mcp (OAuth); 'MCP for Reps' set up by admin.",
+    "verdict": "ready",
+    "blocker": "none",
+    "blocker_note": "",
+    "evidence": [
+      {
+        "field": "auth_methods",
+        "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+        "quote": "Every request carries clay-api-key, and keys are created under Settings, Account, API keys"
+      },
+      {
+        "field": "access",
+        "url": "https://university.clay.com/docs/clay-api-cli",
+        "quote": "The developer platform is available across all Clay plans, including free, trial, and Legacy plans."
+      },
+      {
+        "field": "api_type",
+        "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+        "quote": "Base URL is https://api.clay.com/public/v0."
+      },
+      {
+        "field": "official_mcp",
+        "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+        "quote": "the endpoint the official connector points at is https://api.clay.com/v3/mcp"
+      },
+      {
+        "field": "verdict",
+        "url": "https://university.clay.com/docs/clay-api-cli",
+        "quote": "The developer platform is available across all Clay plans, including free, trial, and Legacy plans."
+      }
+    ],
+    "confidence": "medium",
+    "changes": [
+      {
+        "field": "access",
+        "from": "paid_plan",
+        "to": "self_serve",
+        "reason": "Developer platform (Public API/CLI) available on all plans incl. free; free plan has search limits (100 results/30 days) and credits",
+        "url": "https://university.clay.com/docs/clay-api-cli"
+      },
+      {
+        "field": "verdict",
+        "from": "ready_with_gate",
+        "to": "ready",
+        "reason": "Free-plan workspace yields working API key via 'clay api-keys create'; no paid gate to build",
+        "url": "https://university.clay.com/docs/clay-api-cli"
+      },
+      {
+        "field": "blocker",
+        "from": "paid_plan",
+        "to": "none",
+        "reason": "No paid gate for credentials",
+        "url": "https://university.clay.com/docs/clay-api-cli"
+      }
+    ],
+    "verifier_status": "corrected",
+    "verifier_note": "access; verdict; blocker updated"
+  }
+]

@@ -1,0 +1,4255 @@
+{
+ "summary": {
+  "records": 100,
+  "evidence_rows": 479,
+  "by_result": {
+   "dead_link": 15,
+   "grounded": 416,
+   "js_page": 41,
+   "quote_not_found": 7
+  },
+  "records_with_schema_issues": 0,
+  "records_with_dead_or_ungrounded": 7
+ },
+ "records": [
+  {
+   "id": 1,
+   "app": "Salesforce",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.salesforce.com/signup",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+     "status": 403,
+     "result": "dead_link"
+    }
+   ],
+   "dead": 6,
+   "ungrounded": 0
+  },
+  {
+   "id": 2,
+   "app": "HubSpot",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/build-with-projects/create-private-apps-with-projects",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 3,
+   "app": "Pipedrive",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.pipedrive.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.pipedrive.com/en/features/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.pipedrive.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.attio.com/mcp/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 5,
+   "app": "Twenty",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.twenty.com/developers/contribute/capabilities/local-setup",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.twenty.com/user-guide/data-migration/how-tos/import-data-via-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://twenty.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 6,
+   "app": "Podio",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.podio.com/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.progress.com/podio/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.podio.com/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.progress.com/podio/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.zoho.com/developer/oauth/register-app.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 8,
+   "app": "Close",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.close.com/api/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://developer.close.com/api/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://close.com/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.close.com/api/resources/leads",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://help.close.com/integrations/close-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://close.com/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 9,
+   "app": "Copper",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://developer.copper.com/introduction/oauth/index.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.copper.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.copper.com/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 10,
+   "app": "DealCloud",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://api.docs.dealcloud.com/guides/making_requests_on_behalf_of_users",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://api.docs.dealcloud.com/mcp/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 11,
+   "app": "Zendesk",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.zendesk.com/documentation/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 12,
+   "app": "Intercom",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.intercom.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 13,
+   "app": "Freshdesk",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.freshdesk.com/api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.freshdesk.com/api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://dev.frontapp.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://dev.frontapp.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://dev.frontapp.com/docs/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 15,
+   "app": "Pylon",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 16,
+   "app": "LiveAgent",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://support.liveagent.com/802463-REST-API",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.liveagent.com/features/mcp-server/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://support.liveagent.com/911737-API-v3",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.liveagent.com/150554-AI-features",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.liveagent.com/066804-LiveAgent-API",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 17,
+   "app": "Plain",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.plain.com/blog/api-first-support-platforms",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.plain.com/docs/graphql/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.plain.com/changelog/plain-mcp",
+     "status": 200,
+     "overlap": 0.9333333333333333,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.plain.com/docs/graphql/sdk",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.helpscout.com/mailbox-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://articles.helpscout.com/blog/introducing-help-scout-mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.helpscout.com/pricing/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 19,
+   "app": "Gorgias",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.gorgias.com/reference/list-users",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 20,
+   "app": "Gladly",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.gladly.com/rest/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.gladly.com/rest/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://glama.ai/mcp/connectors/dev.cotlet/gladly/tools/gladly_apply_topics",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.gladly.com/rest/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 21,
+   "app": "Slack",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.slack.dev/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.slack.dev/faq",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.slack.dev/ai/slack-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.slack.dev/ai/slack-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 22,
+   "app": "Twilio",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.twilio.com/docs/iam/api-keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 23,
+   "app": "Zoho Cliq",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 24,
+   "app": "Lark (Larksuite)",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 25,
+   "app": "Pumble",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 26,
+   "app": "Discord",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.discord.com/developers/bots/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.strac.io/blog/discord-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 27,
+   "app": "Telegram",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "api_type",
+     "url": "https://core.telegram.org/bots/api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://core.telegram.org/bots/tutorial",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://core.telegram.org/bots/tutorial",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.aircall.io/api-references",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.aircall.io/docs/basic-authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 30,
+   "app": "Vonage",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.vonage.com/en/blog/pstn-branded-calling-with-vonage-voice-api-and-first-orion",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.vonage.com/en/mcp-server/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 32,
+   "app": "Meta Ads",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 33,
+   "app": "LinkedIn Ads",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.linkedin.com/product-catalog/marketing/advertising-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 34,
+   "app": "GoHighLevel",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 35,
+   "app": "Mailchimp",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://mailchimp.com/help/about-api-keys/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 36,
+   "app": "Klaviyo",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 37,
+   "app": "systeme.io",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://systeme.io/pricing",
+     "status": 200,
+     "overlap": 0.8333333333333334,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://systeme.io/pricing",
+     "status": 200,
+     "overlap": 0.8333333333333334,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 39,
+   "app": "Threads (Meta)",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.facebook.com/documentation/threads/get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/documentation/threads/get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/documentation/threads/get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.facebook.com/documentation/threads/get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 40,
+   "app": "SendGrid",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.twilio.com/en-us/changelog/sendgrid-free-plan",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 41,
+   "app": "Shopify",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://shopify.dev/docs/api/ai-toolkit",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 42,
+   "app": "WooCommerce",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.woocommerce.com/docs/features/mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 43,
+   "app": "BigCommerce",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/environments",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "status": 403,
+     "result": "dead_link"
+    }
+   ],
+   "dead": 5,
+   "ungrounded": 0
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 46,
+   "app": "Squarespace",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.squarespace.com/mcp/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.ecwid.com/api-reference",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://zapier.com/mcp/ecwid",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 48,
+   "app": "Gumroad",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://gumroad.com/help/article/280-create-application-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://gumroad.com/api",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://gumroad.com/api",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://gumroad.com/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://gumroad.com/help/article/280-create-application-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://advertising.amazon.com/API/docs/en-us/knowledge-hub/blogs/usage-examples/2024-11-sp-and-ads-bp",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.amazonservices.com/",
+     "status": 200,
+     "overlap": 0.7142857142857143,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/amzn/selling-partner-api-samples/discussions/382",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 50,
+   "app": "fanbasis",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://commasdocs.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://commasdocs.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://commasdocs.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://commasdocs.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "verdict",
+     "url": "https://commasdocs.com/",
+     "status": 200,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://dataforseo.com/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://dataforseo.com/model-context-protocol",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://dataforseo.com/model-context-protocol",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://dataforseo.com/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 52,
+   "app": "SE Ranking",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://seranking.com/api/data/getting-started/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://seranking.com/api.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://seranking.com/api.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://seranking.com/api/integrations/mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://seranking.com/api.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 53,
+   "app": "Ahrefs",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.ahrefs.com/",
+     "status": 200,
+     "overlap": 0.75,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.ahrefs.com/en/api/docs/free-test-queries",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 54,
+   "app": "MrScraper",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.mrscraper.com/docs/api/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.mrscraper.com/docs/api/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 55,
+   "app": "Apify",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.apify.com/api/v2",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://github.com/apify/apify-mcp-server/blob/master/README.md",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.apify.com/api/v2",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://mcp.apify.com/",
+     "status": 401,
+     "result": "dead_link"
+    },
+    {
+     "field": "verdict",
+     "url": "https://apify.com/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 1,
+   "ungrounded": 0
+  },
+  {
+   "id": 56,
+   "app": "Firecrawl",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.activepieces.com/blog/firecrawl-api-limits-and-credits-for-developers",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.firecrawl.dev/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.firecrawl.dev/use-cases/developers-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.firecrawl.dev/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.firecrawl.dev/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_total_balance_through_API",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.brightdata.com/api-reference/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://brightdata.com/products/web-scraper",
+     "status": 200,
+     "overlap": 0.8181818181818182,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/brightdata/brightdata-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://brightdata.com/pricing/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 59,
+   "app": "Waterfall.io",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.waterfall.io/v1/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.waterfall.io/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.waterfall.io/v1/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.waterfall.io/v1/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.waterfall.io/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 60,
+   "app": "Clay",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://university.clay.com/docs/clay-api-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.scalekit.com/blog/clay-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://university.clay.com/docs/clay-api-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 61,
+   "app": "GitHub",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/github/github-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 62,
+   "app": "Vercel",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://vercel.com/docs/rest-api",
+     "status": 200,
+     "overlap": 0.75,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://vercel.com/docs/rest-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://vercel.com/docs/rest-api",
+     "status": 200,
+     "overlap": 0.7333333333333333,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://vercel.com/docs/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 63,
+   "app": "Netlify",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/netlify/netlify-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 64,
+   "app": "Cloudflare",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 65,
+   "app": "Supabase",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://supabase.com/docs/guides/platform/personal-access-tokens",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 66,
+   "app": "Neo4j",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://neo4j.com/docs/aura/api/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://neo4j.com/docs/aura/api/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://neo4j.com/docs/aura/api/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://neo4j.com/docs/mcp/current/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 67,
+   "app": "Snowflake",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://signup.snowflake.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.mongodb.com/products/tools/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.datadoghq.com/free-datadog-trial/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.datadoghq.com/mcp_server/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 70,
+   "app": "Sentry",
+   "schema_issues": [
+    "verdict_derived"
+   ],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.sentry.io/api/auth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.sentry.io/api/auth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.sentry.io/account/auth-tokens/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.sentry.io/api/auth/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.sentry.io/product/sentry-mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.notion.com/guides/notion-api/quick-start",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.notion.com/guides/connections-and-tokens/internal-connections",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.notion.com/reference/request-limits",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 72,
+   "app": "Airtable",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://airtable.com/developers/web/api/authentication",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://airtable.com/developers/web/api/authentication",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://airtable.com/developers/agents/mcp/getting-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 73,
+   "app": "Linear",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://linear.app/developers",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://linear.app/docs/api-and-webhooks",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://linear.app/docs/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 74,
+   "app": "Jira",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 75,
+   "app": "Asana",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.asana.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.asana.com/docs/rate-limits",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.asana.com/docs/personal-access-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.asana.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 76,
+   "app": "Monday.com",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "status": 200,
+     "overlap": 0.9411764705882353,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.monday.com/api-reference/docs/mcp-api-token",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.clickup.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.clickup.com/reference/getaccesstoken",
+     "status": 200,
+     "overlap": 0.9166666666666666,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.clickup.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 78,
+   "app": "Coda",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://coda.io/packs/build/latest/guides/basics/authentication/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.superhuman.com/hc/en-us/articles/46210310809613-Generate-API-tokens-for-Docs",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 79,
+   "app": "Smartsheet",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.smartsheet.com/api/smartsheet/openapi/serverinfo",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.smartsheet.com/api/smartsheet/openapi/users",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 80,
+   "app": "Harvest",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://help.getharvest.com/api-v2/invoices-api/invoices/invoices/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 81,
+   "app": "Stripe",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.stripe.com/keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.stripe.com/keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.stripe.com/keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.stripe.com/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.stripe.com/keys",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 82,
+   "app": "Plaid",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://plaid.com/docs/quickstart/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://support.plaid.com/hc/en-us/articles/39917307426967-How-do-I-upgrade-from-the-Trial-plan-to-a-paid-Production-plan",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://plaid.com/docs/quickstart/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://plaid.com/docs/resources/mcp/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://support.plaid.com/hc/en-us/articles/16110502116887-What-are-Plaid-s-prices-and-pricing-plans-and-how-do-they-differ",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 83,
+   "app": "Binance",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/general-info",
+     "status": 202,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+     "status": 202,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.binance.com/en/docs/products/spot/web-socket-api",
+     "status": 202,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+     "status": 202,
+     "result": "js_page"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+     "status": 202,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 84,
+   "app": "Paygent Connect",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "access",
+     "url": "https://www.pay-gent.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://docs.nmi.com/docs/payment-component",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.pay-gent.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.pay-gent.com/",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.pay-gent.com/",
+     "status": 200,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 85,
+   "app": "iPayX",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://www.ipayx.ai/developers",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://www.ipayx.ai/developers",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.ipayx.ai/developers",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://www.ipayx.ai/developers",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "verdict",
+     "url": "https://www.ipayx.ai/?lang=en",
+     "status": 200,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 86,
+   "app": "QuickBooks",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://help.developer.intuit.com/s/question/0D5TR00000fHVqB0AW/will-i-need-to-prepare-for-an-app-review-to-get-production-keys-for-a-private-app",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "status": 200,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+     "status": 200,
+     "result": "js_page"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+     "status": 200,
+     "result": "js_page"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 88,
+   "app": "Brex",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developer.brex.com/docs/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://developer.brex.com/guides/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developer.brex.com/guides/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developer.brex.com/docs/mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developer.brex.com/guides/api-launch-stages",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": 200,
+     "overlap": 0.14285714285714285,
+     "result": "quote_not_found"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": 200,
+     "overlap": 0.21428571428571427,
+     "result": "quote_not_found"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": 200,
+     "overlap": 0.4,
+     "result": "quote_not_found"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+     "status": 200,
+     "overlap": 0.36363636363636365,
+     "result": "quote_not_found"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": 200,
+     "overlap": 0.3333333333333333,
+     "result": "quote_not_found"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 5
+  },
+  {
+   "id": 90,
+   "app": "PitchBook",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "access",
+     "url": "https://investordatarooms.com/pitchbook-api/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://pitchbook.com/help/PitchBook-api",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+     "status": 403,
+     "result": "dead_link"
+    },
+    {
+     "field": "verdict",
+     "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://pitchbook.com/help/PitchBook-api",
+     "status": 403,
+     "result": "dead_link"
+    }
+   ],
+   "dead": 3,
+   "ungrounded": 0
+  },
+  {
+   "id": 91,
+   "app": "NotebookLM",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": 200,
+     "overlap": 0.4444444444444444,
+     "result": "quote_not_found"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 1
+  },
+  {
+   "id": 92,
+   "app": "Otter AI",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://www.scalekit.com/blog/otter-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 93,
+   "app": "Fathom",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.fathom.ai/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://help.fathom.video/en/articles/8368641",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.fathom.ai/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.fathom.ai/mcp-docs",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://help.fathom.video/en/articles/8368641",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 94,
+   "app": "Consensus",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.consensus.app/api-get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.consensus.app/api-get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.consensus.app/api-get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.consensus.app/api-get-started",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 95,
+   "app": "Reducto",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.reducto.ai/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://docs.reducto.ai/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.reducto.ai/quickstart",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.reducto.ai/mcp-server",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://reducto.ai/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 96,
+   "app": "Devin",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://devin.ai/pricing",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 97,
+   "app": "higgsfield",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://docs.higgsfield.ai/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://higgsfield.ai/blog/higgsfield-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://higgsfield.ai/blog/higgsfield-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://higgsfield.ai/blog/higgsfield-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://higgsfield.ai/blog/higgsfield-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "status": 200,
+     "overlap": 0.42857142857142855,
+     "result": "quote_not_found"
+    },
+    {
+     "field": "verdict",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 1
+  },
+  {
+   "id": 99,
+   "app": "YouTube Transcript",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://transcriptapi.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://transcriptapi.com/blog/best-youtube-transcript-apis-compared",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://transcriptapi.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://transcriptapi.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://transcriptapi.com/blog/youtube-transcript-api-comparison",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "schema_issues": [],
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.grain.com/authentication.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "access",
+     "url": "https://www.scalekit.com/blog/grain-mcp-vs-api",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "api_type",
+     "url": "https://developers.grain.com/",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "official_mcp",
+     "url": "https://developers.grain.com/authentication.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    },
+    {
+     "field": "verdict",
+     "url": "https://developers.grain.com/authentication.html",
+     "status": 200,
+     "overlap": 1.0,
+     "result": "grounded"
+    }
+   ],
+   "dead": 0,
+   "ungrounded": 0
+  }
+ ]
+}

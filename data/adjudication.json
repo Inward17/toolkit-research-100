@@ -1,0 +1,93 @@
+{
+ "method": "Every pass-vs-gold disagreement re-opened on the vendor page by the reviewer; gold edited only when the page contradicts it.",
+ "rulings": [
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "access",
+   "ruling": "gold_right",
+   "evidence": "https://dev.frontapp.com/docs/welcome",
+   "quote": "You'll get access to a free developer environment"
+  },
+  {
+   "id": 19,
+   "app": "Gorgias",
+   "field": "access",
+   "ruling": "gold_right",
+   "evidence": "https://www.gorgias.com/pricing",
+   "quote": "Start free trial ... No credit card required"
+  },
+  {
+   "id": 40,
+   "app": "SendGrid",
+   "field": "auth_methods",
+   "ruling": "gold_right",
+   "evidence": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "quote": "v3 API uses API keys; Basic not supported"
+  },
+  {
+   "id": 41,
+   "app": "Shopify",
+   "field": "verdict/blocker",
+   "ruling": "gold_right",
+   "evidence": "https://shopify.dev/docs/apps/build/authentication-authorization",
+   "quote": "App review only applies to App Store distribution; custom apps on free dev stores need none"
+  },
+  {
+   "id": 42,
+   "app": "WooCommerce",
+   "field": "official_mcp",
+   "ruling": "gold_right",
+   "evidence": "https://developer.woocommerce.com/docs/features/mcp/",
+   "quote": "MCP integration is a developer preview -> beta"
+  },
+  {
+   "id": 66,
+   "app": "Neo4j",
+   "field": "api_type",
+   "ruling": "gold_right",
+   "evidence": "https://neo4j.com/docs/query-api/current/",
+   "quote": "'other' is not a valid api_type value (schema violation)"
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "auth_methods",
+   "ruling": "gold_corrected",
+   "evidence": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "quote": "Legacy API keys use HTTP Digest -> 'other' is a valid extra method"
+  },
+  {
+   "id": 86,
+   "app": "QuickBooks",
+   "field": "api_type",
+   "ruling": "gold_corrected",
+   "evidence": "https://help.developer.intuit.com/s/question/0D5TR00001EgyTq0AJ",
+   "quote": "Access to the Premium GraphQL APIs is available only to partners on the Silver, Gold, and Platinum tiers"
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "verdict/blocker",
+   "ruling": "both_accepted",
+   "evidence": "https://developer.xero.com/pricing",
+   "quote": "Starter: 5 connections max; card required moving to Core -> free for dev, paid for a multi-tenant toolkit"
+  },
+  {
+   "id": 90,
+   "app": "PitchBook",
+   "field": "auth_methods",
+   "ruling": "gold_right",
+   "evidence": "https://pitchbook.com/help/PitchBook-api",
+   "quote": "PB-Token key provisioned by account manager -> api_key"
+  },
+  {
+   "id": 34,
+   "app": "GoHighLevel",
+   "field": "access/verdict/blocker",
+   "ruling": "both_accepted",
+   "evidence": "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount",
+   "quote": "Sandbox access is tied to the Marketplace Developer account ... provisioned immediately; sandbox can generate PITs. End users still need a paid plan."
+  }
+ ]
+}
